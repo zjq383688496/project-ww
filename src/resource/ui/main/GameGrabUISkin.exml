@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<e:Image width="719" height="1199" x="0" y="-1.52" scaleX="1" scaleY="1" source="bg_png"/>
+	<e:Group id="content_group" width="719" height="1199" y="0" horizontalCenter="0">
+		<e:Group id="groupHeader" width="100%" height="100" y="0" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" horizontalCenter="0">
+		</e:Group>
+		<e:Group id="kline_group" width="719" height="443" y="105" horizontalCenter="0">
+			<e:Image width="711" height="100%" y="0" scaleX="1" scaleY="1" horizontalCenter="0" source="zhishu-bg_png"/>
+			
+		</e:Group>
+		<e:Group id="chat_banker_group" width="719" height="225" y="552.69" horizontalCenter="0">
+			<e:Image width="711" height="225" y="0" source="grab_chat_banker_bg_png" horizontalCenter="0"/>
+			<e:Group id="chat_group" width="370" height="220" x="5" verticalCenter="0"/>
+			<e:Image width="3" height="167" x="371.99" verticalCenter="-1" source="vertical_line_png"/>
+			<e:Group id="banker_group" width="340" height="220" x="376" verticalCenter="0.5">
+			
+			<e:Button id="btn_banker_queue" width="118" height="38" x="20.01" y="179.97">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_banker_queue_png" source.down="btn_banker_queue_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+
+			<e:Image id="banker_avatar" width="59.01" height="59.01" x="47.66" y="50.66" anchorOffsetX="0" anchorOffsetY="0" source=""/>
+			<e:Image width="138" height="150" x="7.68" y="23.38" source="banker_avater_box_png"/>
+			<e:Image width="37" height="37" x="158.63" y="45" source="icon_banker_png"/>
+			<e:Image width="172" height="1" x="152.31" y="83.65" source="grab_banker_line_png"/>
+			<e:Label id="banker_name" text="" x="206.32" y="52.66" size="20" fontFamily="Microsoft YaHei" anchorOffsetX="0" width="120" multiline="false" height="20"/>
+			<e:Image width="34" height="34" x="147.64" y="115.05" source="sign_activity_1_png"/>
+			<e:Image width="172" height="1" x="152.31" y="151.71" source="grab_banker_line_png"/>
+			<e:Button id="btn_apply_banker" label="" x="183.98" width="130" height="52" scaleX="1" scaleY="1" y="168.9">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_apply_banker_normal_png" source.down="btn_apply_banker_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btn_off_banker" label="" x="183.98" width="130" height="52" scaleX="1" scaleY="1" y="168.9" visible="false">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_off_banker_normal_png" source.down="btn_off_banker_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Image width="76" height="23" x="38.63" y="11.8" source="bg_round_remain_png"/>
+			<e:Label id="banker_round_remain" text="0" x="94.96" y="14.02" width="19.68" height="20.67" size="15" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei" anchorOffsetX="0" anchorOffsetY="0"/>
+				<e:Label text="剩余局数" x="43.58" y="12.82" fontFamily="Microsoft YaHei" size="13" anchorOffsetY="0" height="21" verticalAlign="middle"/>
+			<e:Label id="lb_queue_order_title" text="排庄" x="129" y="165" anchorOffsetX="0" width="58" anchorOffsetY="0" height="23" size="17" textAlign="center" verticalAlign="middle" textColor="0xfcfbf9" fontFamily="Microsoft YaHei" visible="false"/>
+			<e:Label id="lb_queue_order" text="" x="147" y="191" size="18" textColor="0xf9ef43" width="21" height="18" textAlign="center" verticalAlign="middle"/>
+			<e:Group width="133" height="35" x="187" y="116" anchorOffsetY="0" anchorOffsetX="0">
+				<e:BitmapLabel id="banker_balance" y="-4.580000000000041" anchorOffsetY="0" anchorOffsetX="0" text="" font="banker_gold_fnt" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group id="group_banker_help" width="84" height="30" x="241.4" y="8.32" anchorOffsetY="0" anchorOffsetX="0">
+				<e:Image width="73" height="27" x="6.5" y="1" source="icon_kline_help_png" alpha="0.8"/>
+				<e:Label text="帮助" x="25.5" y="-6.5" size="15" fontFamily="Microsoft YaHei" anchorOffsetY="0" height="43" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="59" scaleX="1" scaleY="1" alpha="0.8"/>
+			</e:Group>
+			</e:Group>
+		</e:Group>
+		<e:Group id="bet_group" width="719" height="407" y="782.32" horizontalCenter="0">
+			<e:Image width="711" height="407" y="0.67" source="bg_grab_bet_png" horizontalCenter="0"/>
+			<e:Image width="689" height="63" y="27.15" source="bg_win_amount_png" horizontalCenter="0.5"/>
+			<e:Image width="80" height="79" y="20.66" source="icon_timer_png" horizontalCenter="0"/>
+			<e:Image width="297" height="69" y="-15.01" source="bg_grab_title_png" horizontalCenter="0.5"/>
+			<e:Label id="timer_label" text="0" y="41.69" textColor="0x211c1c" size="30" fontFamily="lgzbFont" anchorOffsetX="0" width="58" stroke="1" strokeColor="0xeddede" verticalAlign="middle" textAlign="center" horizontalCenter="-1.5" anchorOffsetY="0" height="48"/>
+			<e:Image width="402" height="29" y="98.36" source="bg_grab_bet_1_png" horizontalCenter="0"/>
+			<e:Image width="402" height="29" y="126.94" source="bg_grab_bet_1_png" horizontalCenter="0"/>
+			<e:Image width="135" height="164" x="14.65" y="91.35" source="bg_grab_safe_box_png"/>
+			<e:Image width="135" height="164" x="562.65" y="91.35" source="bg_grab_safe_box_png"/>
+			<e:Label id="label_bet_total_amount_0" text="0" x="163" y="104.33" size="20" anchorOffsetX="0" width="134" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_1" text="0" x="297.67" y="104.33" size="20" anchorOffsetX="0" width="132" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_2" text="0" x="429" y="104.33" size="20" anchorOffsetX="0" width="130" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_my_bet_0" text="0" x="163" y="132.33" size="20" anchorOffsetX="0" width="134" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_1" text="0" x="297" y="132.33" size="20" anchorOffsetX="0" width="132.67" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_2" text="0" x="429" y="132.33" size="20" anchorOffsetX="0" width="132" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Image id="img_safe_box" width="106" height="95" x="32.68" y="98.03" source="icon_safe_box_png"/>
+			<e:Button id="btn_repeat_bet" label="" x="20.67" y="197.33" width="123.2" height="42.9">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_repeat_bet_png" source.down="btn_repeat_bet_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btn_auto_bet" label="" x="575.01" y="102.34" width="112" height="39">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image id="image_auto_bet" width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_auto_bet_png" source.down="btn_auto_bet_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image width="103" height="27" x="579.33" y="147.99" source="bg_round_remain_png" scaleX="1" scaleY="1"/>
+			<e:Label id="label_auto_bet" text="跟注 :0轮" x="582.66" y="151.33" width="100" height="20" size="18" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle"/>
+			<e:Image width="103" height="27" x="580.83" y="221.49" source="bg_round_remain_png" scaleX="1" scaleY="1"/>
+			<e:Label id="label_bet_amount" text="单注：10" x="573.16" y="225.83" width="120" height="20" size="18" fontFamily="Microsoft YaHei" textAlign="center" verticalAlign="middle"/>
+			<e:Button id="btn_change_amount" label="" x="575.68" y="178.51" width="112" height="39">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_change_png" source.down="btn_change_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Button id="btn_odds_0" label="" x="170.02" y="164.51" width="120" height="84">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_rise_png" source.down="btn_rise_pressed_png" source.disabled="btn_rise_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image width="57" height="49" x="170.34" y="165" source="icon-zhang_png" touchEnabled="false"/>
+			<e:Label id="label_odds_0" text="" x="170.5" y="190.5" fontFamily="lgzbFont" bold="true" anchorOffsetX="0" width="117" size="30" touchEnabled="false" strokeColor="0x0c0b0b" stroke="1" textColor="0xf5deab" textAlign="center"/>
+			<e:Image width="80" height="32" x="199.34" y="197" source="icon_rise_1.5_png" touchEnabled="false" visible="false"/>
+			<e:Button id="btn_odds_1" label="" x="303.54" y="164.51" width="120" height="84">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_equal_png" source.down="btn_equal_pressed_png" source.disabled="btn_equal_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image width="57" height="49" x="303.86" y="165" source="icon-pings_png" touchEnabled="false"/>
+			<e:Label id="label_odds_1" text="" x="326" y="189.5" fontFamily="lgzbFont" bold="true" anchorOffsetX="0" width="85" size="30" touchEnabled="false" textAlign="center" strokeColor="0x000000" stroke="1" textColor="0xf5deab"/>
+			<e:Image width="83" height="37" x="326.36" y="193" source="icon_equal_30_png" touchEnabled="false" visible="false"/>
+			<e:Button id="btn_odds_2" label="" x="436.04" y="163.51" width="120" height="84">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_fall_png" source.down="btn_fall_pressed_png" source.disabled="btn_fall_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Image width="57" height="49" x="436.36" y="163.5" source="icon-die_png" touchEnabled="false"/>
+			<e:Label id="label_odds_2" text="" x="437.5" y="188.5" fontFamily="lgzbFont" bold="true" anchorOffsetX="0" width="117" size="30" touchEnabled="false" stroke="1" textColor="0xf5deab" textAlign="center"/>
+			<e:Image width="80" height="32" x="463.36" y="197" source="icon_fall_1.5_png" touchEnabled="false" visible="false"/>
+			<e:Image width="688" height="29" y="259" horizontalCenter="0" source="bg_grab_bet_2_png"/>
+			<e:Label id="label_bet_total_amount_3" text="0" x="18.69" y="264.5" size="20" anchorOffsetX="0" width="85" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_4" text="0" x="104.36" y="264.5" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_5" text="0" x="192.36" y="264.5" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_6" text="0" x="279.02" y="264.5" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_7" text="0" x="364.68" y="264.5" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_8" text="0" x="452.36" y="264.5" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_9" text="0" x="538.34" y="264.5" size="20" anchorOffsetX="0" width="86" verticalAlign="middle" textAlign="center"/>
+			<e:Label id="label_bet_total_amount_10" text="0" x="622.67" y="264.5" size="20" anchorOffsetX="0" width="80.33" verticalAlign="middle" textAlign="center"/>
+			<e:Image width="688" height="29" y="286.67" horizontalCenter="0" source="bg_grab_bet_2_png"/>
+			<e:Label id="label_my_bet_3" text="0" x="18.69" y="293.17" size="20" anchorOffsetX="0" width="85" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_4" text="0" x="104.36" y="293.17" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_5" text="0" x="192.36" y="293.17" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_6" text="0" x="279.69" y="293.17" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_7" text="0" x="365.34" y="293.17" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_8" text="0" x="453.03" y="293.17" size="20" anchorOffsetX="0" width="88" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_9" text="0" x="539.01" y="293.17" size="20" anchorOffsetX="0" width="85.33" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Label id="label_my_bet_10" text="0" x="623.34" y="293.17" size="20" anchorOffsetX="0" width="81" verticalAlign="middle" textAlign="center" textColor="0xf9bc27"/>
+			<e:Button id="btn_odds_3" label="" x="19.83" y="317.83" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_3" text="" x="23.99" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_3" text="" x="24.99" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" bold="true" textColor="0xffffff" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_4" label="" x="107.39" y="318.23" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_4" text="" x="111.88" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_4" text="" x="112.55" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_5" label="" x="193.79" y="318.23" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_5" text="" x="198.28" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_5" text="" x="198.95" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_6" label="" x="280.35" y="318.23" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_6" text="" x="284.84" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_6" text="" x="285.51" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_7" label="" x="369.27" y="318.23" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_7" text="" x="372.09" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_7" text="" x="374.43" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_8" label="" x="455.29" y="317.03" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_8" text="" x="457.94" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_8" text="" x="460.45" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_9" label="" x="540.52" y="317.03" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_9" text="" x="542.67" y="319.34" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_9" text="" x="545.68" y="364.9" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Button id="btn_odds_10" label="" x="624.68" y="317.29" width="83" height="85">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="label_interval_10" text="" x="629.84" y="318" anchorOffsetY="0" height="27.33" size="25" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xf5deab"/>
+			<e:Label id="label_odds_10" text="" x="629.84" y="363.56" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1"/>
+			<e:Image id="icon_game_title" width="106" height="30" y="-5.87" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" source="icon_wating_settle_png"/>
+			<e:BitmapLabel id="label_my_balance" x="478.02" y="48.6" text="0" anchorOffsetX="0" anchorOffsetY="0" font="gold_12_fnt" textAlign="right" width="181" height="24"/>
+			<e:BitmapLabel id="label_win_amount" width="181" x="103" y="49.5" font="gold_12_fnt" text="0" textAlign="right" anchorOffsetY="0" height="23.5"/>
+			<e:Group id="group_auto_bet_notice" width="381.34" height="64.66" y="258.67" horizontalCenter="0" visible="false">
+			<e:Image width="381.34" height="64.66" y="0" source="toast-bg_png" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0" x="0" scaleX="1" scaleY="1"/>
+			<e:Label text="正在自动跟注" y="13.329999999999927" horizontalCenter="0" fontFamily="Microsoft YaHei" textColor="0xfcfcfc" backgroundColor="0x261919" anchorOffsetY="0" height="32.66" x="101" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Image id="imgLose0" width="120" height="83" x="170.02" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="3" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose1" width="120" height="83" x="304.18" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="3" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose2" width="120" height="83" x="436.5" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="2" source="icon_fall_cry_png" locked="true" visible="false"/>
+			<e:Image id="imgLose3" width="81" height="83" x="22" anchorOffsetX="0" anchorOffsetY="0" y="318" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose4" width="81" height="83" x="109.36" anchorOffsetX="0" anchorOffsetY="0" y="318" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose5" width="81" height="83" x="196.28" anchorOffsetX="0" anchorOffsetY="0" y="318" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose6" width="81" height="83" x="281.51" anchorOffsetX="0" anchorOffsetY="0" y="318" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose7" width="81" height="83" x="369.36" anchorOffsetX="0" anchorOffsetY="0" y="318" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose8" width="81" height="83" x="455.36" anchorOffsetX="0" anchorOffsetY="0" y="317" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose9" width="81" height="83" x="540.36" anchorOffsetX="0" anchorOffsetY="0" y="317" source="icon_fall_cry_png" visible="false" locked="true"/>
+			<e:Image id="imgLose10" width="81" height="83" x="625.34" anchorOffsetX="0" anchorOffsetY="0" y="317" source="icon_fall_cry_png" visible="false" locked="true"/>
+		</e:Group>
+		<e:Group id="group_message_norice" width="719" height="44" x="0" y="105.2">
+			<e:Image width="708" height="42" y="2" source="bg_notice_2_png" fillMode="clip" x="0" scaleX="1" scaleY="1"/>
+			<e:Image width="720" height="44" y="0" source="bg_notice_png" x="-1" scaleX="1" scaleY="1" visible="false"/>
+			<e:Image width="41" height="41" x="60" y="5.200000000000003" source="icon_horn_png" scaleX="1" scaleY="1"/>
+			<e:Group width="510" height="41" x="117" y="2" anchorOffsetX="0" anchorOffsetY="0" scrollEnabled="true">
+				<e:Label id="lb_notice" text="Label" y="7.799999999999997" anchorOffsetY="0" height="30" fontFamily="Microsoft YaHei" x="602" size="25" verticalAlign="middle" scaleX="1" scaleY="1"/>
+			</e:Group>
+			<e:Image id="img_notice" width="48" height="41" x="640" y="2" source="img_notice_png" visible="false"/>
+		</e:Group>
+		<e:Group id="group_all" width="719" height="1199" x="0" y="0" visible="false"/>
+		<e:Group id="group_emoji" width="360" height="260" x="14" y="769" anchorOffsetX="0" visible="false">
+		</e:Group>
+		<e:Group id="group_banker_queue" width="300" height="300" x="404.02" y="768.68" visible="false">
+			<e:Image width="300" height="300" x="0" y="0" scaleX="1" scaleY="1" source="bg_banker_queue_png"/>
+			
+			
+			<e:Scroller width="300" height="300" x="0" y="10" anchorOffsetX="0" scaleX="1" scaleY="1">
+				<e:viewport>
+					<e:List id="list_banker_queue" width="300" height="300" x="0" y="0" scaleX="1" scaleY="1">
+						<e:layout> 
+							<e:VerticalLayout/>
+						</e:layout>
+					</e:List>
+				</e:viewport>
+		</e:Scroller>
+		</e:Group>
+		<e:Group id="group_big_winner" width="638" height="280" y="430.22" horizontalCenter="0.5" visible="false">
+			<e:Image id="img_bg_big_winner" width="638" height="280" source="bg_big_winner_png" horizontalCenter="0" verticalCenter="0"/>
+			<e:Label id="lb_big_winner_banker_name" text="" x="195" y="50.32" anchorOffsetX="0" width="185" textAlign="left" size="25" fontFamily="Microsoft YaHei" bold="true"/>
+			<e:Label id="lb_big_winner_name" text="" x="195" y="135.62" width="185" size="25" fontFamily="Microsoft YaHei" bold="true"/>
+			<e:Image id="img_big_winner_banker_res" width="36" height="36" x="386" y="47.62" source=""/>
+			<e:Image id="img_big_winner_res" width="36" height="36" x="387" y="128.62" source=""/>
+			<e:BitmapLabel id="lb_big_winner_banker_amount" x="434" y="49" anchorOffsetX="0" anchorOffsetY="0" text="" font="gold_20_fnt"/>
+			<e:BitmapLabel id="lb_big_winner_amount" x="434" y="130.62" anchorOffsetX="0" anchorOffsetY="0" text="" font="gold_20_fnt"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="point_diff_group" width="200" height="50" x="271" y="192" visible="false">
+		<e:Image width="200" height="50" x="0" y="0" source="bg_round_remain_png"/>
+		<e:Label id="lb_point_diff" text="5" y="0" width="122" height="50" verticalAlign="middle" textAlign="center" right="0" anchorOffsetX="0"/>
+		<e:Label text="点差" fontFamily="Microsoft YaHei" left="0" width="75" height="50" textAlign="right" verticalAlign="middle"/>
+	</e:Group>
+	<e:Group id="groupBankerTip" width="720" height="460" verticalCenter="0" x="0" visible="false">
+		<e:Image width="719" height="1199" source="bg_black_png" x="0" y="-371.23" alpha="0.8"/>
+		<e:Image width="100%" height="100%" source="bg_banker_tip_back_png"/>
+		<e:Image id="imgBankerTipClose" width="66" height="66" x="651.15" y="55" source="bg_banker_tip_close_png"/>
+		<e:Button id="btnBankerTipToup" label="" width="207" scaleX="1" scaleY="1" y="356.08" name="btn_goshop" height="70" x="306.86">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="bg_banker_tip_btn_png" source.down="ok_btn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:game="game.*"/>
+			</e:Skin>
+		</e:skinName>
+		</e:Button>
+	</e:Group>
+</e:Skin>

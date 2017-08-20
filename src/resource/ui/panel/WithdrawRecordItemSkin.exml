@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin" width="600" height="90" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="lb_date" text="" x="1" fontFamily="Arial" size="25" verticalCenter="0.5" textColor="0xfdf9e3"/>
+	<e:Label id="lb_name" text="" x="241" fontFamily="Microsoft YaHei" size="23" verticalCenter="-19" textColor="0xfdf9e3" textAlign="center" anchorOffsetX="0" width="204" anchorOffsetY="0" height="24"/>
+	<e:Label id="lb_status" text="" x="490" fontFamily="Microsoft YaHei" size="25" verticalCenter="0.5" textColor="0xfdf9e3"/>
+	<e:Image id="img_withdraw_code" width="73" height="36" x="304" y="49" source="icon_btn_withdraw_png"/>
+	<e:Label text="兑换码" x="302" y="57" width="73" textAlign="center" size="20" fontFamily="Microsoft YaHei" textColor="0x442f38" touchEnabled="false"/>
+
+
+</e:Skin>

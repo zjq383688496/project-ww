@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeaderBarSkin" width="719" height="112" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b1986f6c6" ></w:Config>
+		<e:Image width="100%" height="109" x="0" y="0" scaleX="1" scaleY="1" source="trade_header_bg_png"/>
+		<e:Label id="lbUserName" text="" x="140.4" y="37" anchorOffsetX="0" anchorOffsetY="0" size="30" verticalAlign="middle" fontFamily="Microsoft YaHei"/>
+	<e:Image id="img_vip" width="43" height="43" x="241.6" y="26.4" source=""/>
+		<e:Image id="imgGold" width="203.47" height="43" x="403.6" y="30.96" anchorOffsetX="0" anchorOffsetY="0" source="icon-input_png"/>
+		<e:Label id="lbGold" text="0" x="431.2" y="32.56" size="27" anchorOffsetX="0" width="148.93" anchorOffsetY="0" height="40.33" textColor="0xF9BC27" verticalAlign="middle" textAlign="center"/>
+		<e:Image id="imgGoldPre" width="55" height="55" x="380.6" y="26.2" source="icon-jinbei_png"/>
+		<e:Image id="imgGoldPlus" width="49" height="48" x="576.41" y="29.16" source="icon-input-jia_png" name="G"/>
+	<e:Image id="img_return" width="67" height="66" x="639.6" source="icon_return_png" verticalCenter="-4"/>
+</e:Skin>

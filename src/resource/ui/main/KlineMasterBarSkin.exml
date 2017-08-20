@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="KlineMasterBarSkin" width="710" height="443" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b2a0868b1" ></w:Config>
+	<e:Group id="groupTimeTypeOut" width="719" height="1199" x="-5" y="-105" visible="false"/>
+	<e:Group id="groupCapital" width="100%" height="45" x="1" y="1"/>
+	<e:Group id="groupLastPrice" width="100%" height="30" x="0" y="45">
+		<e:Group id="groupLastPricePart1" width="610" height="30" x="0" y="0">
+			<e:Label id="lbPeriod" text="0000 期" x="40" y="5" width="80" textAlign="center" size="20"/>
+			<e:Label id="lbCloseText" text="收盘" x="140" y="5" width="40" textAlign="center" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="lbLastPrice" text="0.00" x="188" y="5" textAlign="right" size="20"/>
+			<e:Label id="lbOpenText" text="开盘" x="313" y="5" width="40" textAlign="center" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="lbOpen" text="0.00" x="361" y="5" width="90" textAlign="left" size="20"/>
+			<e:Label id="lbTimeText" text="时间" x="470" y="5" width="40" textAlign="center" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="lbTime" text="00:00:00" x="520" y="5" width="90" textAlign="left" size="20" textColor="0xfff7f7"/>
+			<e:Image id="imgUpDown" width="20" height="30" x="275" y="0" source="icon-shang1_png"/>
+			<e:Image id="imgCapitalLogo" width="35" height="35" x="7" y="-2"/>
+		</e:Group>
+		<e:Button id="btnTimeType" label="" x="625" y="2" width="76" height="33" name="30">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image id="img" width="100%" height="100%" source="time-type-30s_png" source.down="time-type-30s_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Group id="groupTimeTypeDD" width="85" height="200" x="620" y="0" name="groupTimeTypeDD" visible="false">
+			<e:Image id="imgTimeTypeDD" width="100%" height="100%" x="0" y="0" source="time-type-bg_png"/>
+			<e:Button id="btnTimeTypeCurrent" label="" x="5" y="2" width="76" height="33" name="30">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-30s_png" source.down="time-type-30s_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTimeType30s" label="" x="5" y="35" width="76" height="33" name="30">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-30s_png" source.down="time-type-30s_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTimeType1m" label="" x="5" y="67" width="76" height="33" name="60">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-1m_png" source.down="time-type-1m_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTimeType3m" label="" x="5" y="99" width="76" height="33" name="180">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-3m_png" source.down="time-type-3m_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTimeType5m" label="" x="5" y="131" width="76" height="33" name="300">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-5m_png" source.down="time-type-5m_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Button id="btnTimeType15m" label="" x="5" y="163" width="76" height="33" name="900">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image id="img" width="100%" height="100%" source="time-type-15m_png" source.down="time-type-15m_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupChart" width="100%" height="360" x="0" y="75">
+		<e:Group id="groupKline" width="100%" height="350" x="1" y="0">
+			<e:Group id="groupTrade" width="0" height="0" x="0" y="10" scaleX="1" scaleY="1" visible="false">
+				<e:Label id="lbTradeTopTip" name="lbTradeTopTip" text="下注时间" size="13" fontFamily="Microsoft YaHei" x="-69" y="2"/>
+				<e:Label id="lbTradeTopTipTime" text="00:00" x="-20" y="2" scaleX="1" scaleY="1" size="21"/>
+			</e:Group>
+			<e:Group id="groupBetAmount" width="110" height="60" x="585" y="128" scaleX="1" scaleY="1">
+				<e:Image width="100%" height="30" source="bg_round_remain_png"/>
+				<e:Image width="100%" height="30" source="bg_round_remain_png" x="0" bottom="0"/>
+				<e:Image id="imgCapital" width="30" height="30" x="5" y="-1.45" source="icon_btccny_png"/>
+				<e:Label id="lbPeriod1" text="第 0 期" x="37.86" y="0.79" size="14" anchorOffsetY="0" height="26.84" verticalAlign="middle" anchorOffsetX="0" width="71.5" textAlign="center" bold="true"/>
+				<e:Label text="总下注:" x="2.82" y="31.81" size="12" fontFamily="Microsoft YaHei" anchorOffsetX="0" anchorOffsetY="0" height="27.5" verticalAlign="middle" bold="true"/>
+				<e:Label id="lbTotalBetAmount" text="0" x="36.35" y="31.96" size="15" anchorOffsetX="0" width="73" textAlign="center" verticalAlign="middle" anchorOffsetY="0" height="27.5" textColor="0xf9bc27" bold="true"/>
+			</e:Group>
+			<e:Image id="img_topup" width="46" height="113" x="6" y="26.5" source="icon_kline_topup_png"/>
+			<e:Group id="group_kline_top" width="457.37" height="39.8" anchorOffsetY="0" anchorOffsetX="0" scaleX="1" scaleY="1" y="3.75" x="-1">
+				<e:Image width="73" height="27" x="332.92" y="4.1" source="icon_qushi_png" alpha="0.8" visible="false"/>
+				<e:Image width="73" height="27" x="255.42" y="3.5" source="icon_kline_help_png" alpha="0.8"/>
+				<e:Label id="lb_settle_history" text="走势" x="334.51" y="-4.5" size="15" fontFamily="Microsoft YaHei" anchorOffsetY="0" height="43" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="95" scaleX="1" scaleY="1" alpha="0.8" visible="false"/>
+				<e:Label id="lb_kline_help" text="帮助" x="272.01" y="-4" size="15" fontFamily="Microsoft YaHei" anchorOffsetY="0" height="43" textAlign="center" verticalAlign="middle" anchorOffsetX="0" width="59" scaleX="1" scaleY="1" alpha="0.8"/>
+				<e:Image width="121" height="26" x="128.56" y="5.01" source="bg_online_png" alpha="0.8"/>
+				<e:Label id="lb_online_num" text="0" x="190.39" y="4.34" height="26" size="15" anchorOffsetX="0" textAlign="center" verticalAlign="middle" fontFamily="Arial" width="36.73" textColor="0xF9BC27"/>
+				<e:Label text="在线" x="160" y="4.34" size="15" fontFamily="Microsoft YaHei" height="26" verticalAlign="middle" textAlign="center" alpha="0.8"/>
+				<e:Label text="人" x="227.2" y="4.34" size="15" fontFamily="Microsoft YaHei" height="26" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="17.4" alpha="0.8"/>
+			</e:Group>
+		</e:Group>
+		<e:Group id="groupSettle" width="0" height="0" x="0" y="10" visible="false">
+			<e:Label id="lbSettleTopTip" text="开奖时间" size="13" fontFamily="Microsoft YaHei" y="2" x="-69" scaleX="1" scaleY="1" textColor="0xfc4919"/>
+			<e:Label id="lbSettleTopTipTime" text="00:00" x="-20" y="2" scaleX="1" scaleY="1" size="21"/>
+		</e:Group>
+		<e:Group id="groupSettleResult" width="268" height="382" x="474" y="0" anchorOffsetY="0" anchorOffsetX="0" visible="false">
+			<e:Image id="img_settle_bg" width="100%" height="100%" source="bg_classical_settle_red_png"/>
+			<e:Image id="img_settle_result" width="72" height="70" x="101" y="202" source="icon_classical_settle_single_png"/>
+			<e:Label id="lb_settle_result" text="" x="62.75" y="104.5" anchorOffsetX="0" width="147" anchorOffsetY="0" height="32" textAlign="center" verticalAlign="middle" fontFamily="Arial"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="groupTimeType" width="100%" height="50" x="0" y="455" visible="false"/>
+</e:Skin>

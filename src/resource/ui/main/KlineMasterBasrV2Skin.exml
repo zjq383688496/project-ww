@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Error>
+  <Code>NoSuchKey</Code>
+  <Message>The specified key does not exist.</Message>
+  <RequestId>59998FE5ECD3FD32DE10366B</RequestId>
+  <HostId>eg.qqqdui.com</HostId>
+  <Key>resource/ui/main/KlineMasterBasrV2Skin.exml</Key>
+</Error>

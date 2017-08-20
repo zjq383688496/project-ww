@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" width="656" height="775" horizontalCenter="0.5" top="55">
+		<e:Group id="bg_group" width="657" height="774" x="-1" y="1" anchorOffsetX="0" anchorOffsetY="0">
+		</e:Group>
+
+
+		<e:Image id="img_close" width="71" height="73" x="579" y="257" source="icon_close_png"/>
+		<e:Group id="group_apply_banker" width="118" height="46.1" x="23" y="376" anchorOffsetY="0">
+			<e:Button id="btn_apply_banker" label="" x="0" y="0" width="118" height="46.1" scaleX="1" scaleY="1">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="bg_blue_btn_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label text="上   庄" size="22" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="0" y="10"/>
+		</e:Group>
+		<e:Group id="group_off_banker" width="118" height="46.1" x="23" y="426" anchorOffsetY="0">
+			<e:Button id="btn_apply_banker0" label="" x="0" y="0" width="118" height="46.1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bg_blue_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="下   庄" size="22" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="1" y="10.5"/>
+		</e:Group>
+		<e:Group id="group_select_banker" width="118" height="46.1" x="23" y="481" anchorOffsetY="0">
+			<e:Button id="btn_apply_banker1" label="" x="0" y="0" width="118" height="46.1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bg_blue_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="选庄规则" size="22" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="1" y="10"/>
+		</e:Group>
+		<e:Group id="group_remain" width="118" height="46.1" x="23" y="541" anchorOffsetY="0">
+			<e:Button id="btn_apply_banker2" label="" x="0" y="0" width="118" height="46.1">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bg_blue_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label text="剩余局数" size="22" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1" horizontalCenter="1" y="10"/>
+		</e:Group>
+		<e:Image width="601.7" height="214.5" source="bg_rank_title_png" top="123" horizontalCenter="1"/>
+		<e:Label text="上庄帮助" y="192" fontFamily="Microsoft YaHei" size="40" textColor="0xf1dd19" strokeColor="0x4a2608" stroke="2" horizontalCenter="0"/>
+
+	</e:Group>
+	
+	
+</e:Skin>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatBarSkin" width="370" height="220" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b71be2184" ></w:Config>
+		<e:Scroller id="scroller_chat_list" width="348" height="152.5" x="14" y="10" anchorOffsetY="0" anchorOffsetX="0" bounces="false">
+			<e:viewport>
+				<e:List id="chat_list" width="348" height="152.5" anchorOffsetY="0">
+					<e:layout> 
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:List>
+			</e:viewport>
+
+			<!--<e:Skin>
+				<e:VScrollBar id="verticalScrollBar" width="8" minHeight="100%" height="100%" right="0">
+				<e:Skin>
+					<e:Image id="thumb" width="8" source="hScrollBar01_png"  scale9Grid="1,1,4,4"/>
+				</e:Skin>
+				</e:VScrollBar>
+			</e:Skin>-->
+
+		</e:Scroller>
+		<e:Group id="edit_message_group" width="349.52" height="52.82" x="13.7" y="163.85" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Image width="345.5" height="47" x="3" scaleX="1" scaleY="1" source="grab_chat_bg_png" anchorOffsetX="0"/>
+			<e:Image id="btn_expression" width="39" height="40" x="4" scaleX="1" scaleY="1" source="expression_btn_png" y="5"/>
+			<e:Button id="btn_send_message" label="" x="240" width="116" height="55" scaleX="1" scaleY="1" y="1.5">
+				<e:skinName>
+				<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" source="btn_send_message_normal_png" source.down="btn_send_message_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:EditableText id="edit_message" width="196.5" height="40" text="" x="47" anchorOffsetX="0" anchorOffsetY="0" size="20" textAlign="left" prompt="请输入内容" promptColor="0xf7f4f4" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" y="3" verticalAlign="middle"/>
+		</e:Group>
+	<e:Group id="groupChatFlow" width="203" height="50" x="59" y="165" anchorOffsetX="0"/>
+</e:Skin>

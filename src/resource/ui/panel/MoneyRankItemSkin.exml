@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin" width="630" height="80" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Label id="lb_name" fontFamily="微软雅黑" width="171" size="25" x="259" textAlign="center" textColor="0xe5deef" anchorOffsetX="0" text="" verticalCenter="0" height="30"/>
+	<e:Image width="500" height="2" source="grab_banker_line_png" bottom="0" horizontalCenter="0"/>
+	<e:BitmapLabel id="lb_balance" width="150" height="25" x="477" font="gold_12_fnt" text="0" anchorOffsetY="0" verticalCenter="0.5"/>
+	<e:Image id="img_order" width="72" height="66" x="38" verticalCenter="0"/>
+	<e:BitmapLabel id="lb_order" width="30" height="20" x="65" font="gold_12_fnt" text="" verticalCenter="0"/>
+
+
+</e:Skin>

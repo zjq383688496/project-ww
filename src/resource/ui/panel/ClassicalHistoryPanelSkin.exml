@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" width="710" height="442" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="-96.5" horizontalCenter="0.5">
+		<e:Image width="710" height="442" source="bg_classical_history_bg_png"/>
+		<e:Image id="img" width="324" height="42" y="101" horizontalCenter="0" source="bg_classical_history_right_png"/>
+		<e:Group id="group_content" width="540" height="143" x="89" y="213" anchorOffsetX="0" anchorOffsetY="0"/>
+		<e:Label id="lb_history" text="胜负走势" x="196" y="103" anchorOffsetX="0" width="160" fontFamily="Microsoft YaHei" size="25" textAlign="center" verticalAlign="middle" anchorOffsetY="0" height="37"/>
+		<e:Label id="lb_help" text="游戏规则" x="356" y="103" anchorOffsetX="0" width="158" fontFamily="Microsoft YaHei" size="25" textAlign="center" verticalAlign="middle" anchorOffsetY="0" height="39"/>
+	</e:Group>
+	<e:Image id="img_close" width="47" height="48" x="672" y="312" source="icon_history_close_png"/>
+	
+	
+</e:Skin>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HeaderBarSkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b1986f6c6" ></w:Config>
+	<e:Image width="100%" height="100%" source="loading_png" visible="false"/>
+	<e:ProgressBar id="pb" width="620" height="290" y="725.5" anchorOffsetX="0" anchorOffsetY="0" enabled="true" scaleX="1" horizontalCenter="0.5">
+		<e:Skin>
+		<e:Image scale9Grid="1,1,4,4" width="620" height="290" verticalCenter="0" source="loadingProgressBack_png"/>
+		<e:Image id="thumb" y= "142.5" x= "-2" height="95" width="652" source="loadingProgressBar_png"/>
+		</e:Skin>
+	</e:ProgressBar>
+	<e:Label text="首次加载时间稍长,请耐心等待..." y="813.5" fontFamily="Microsoft YaHei" horizontalCenter="0"/>
+	<e:Label id="lb_prgress" text="" y="899.5" fontFamily="Microsoft YaHei" horizontalCenter="0.5" size="30"/>
+	<e:Label text="无法进入游戏请刷新(加载游戏主题文件)" y="850" size="22" fontFamily="Microsoft YaHei" horizontalCenter="0" textColor="0x1ccc0a"/>
+</e:Skin>

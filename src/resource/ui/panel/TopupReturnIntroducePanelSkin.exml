@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group_miji_dialog" width="719" height="1075" anchorOffsetX="0" anchorOffsetY="0" y="0" x="0">
+		<e:Image width="719" height="1199" source="bg_capital_list_png" horizontalCenter="0" y="-1"/>
+		<e:Image id="img_close" width="71" height="73" x="640" y="243" source="icon_close_png"/>
+		<e:Label text="提示" y="167" fontFamily="Microsoft YaHei" size="40" textColor="0xF1DD19" strokeColor="0x4A2608" stroke="2" scaleX="1" scaleY="1" horizontalCenter="0"/>
+		<e:Scroller id="scroller" width="628" height="690" x="46" y="311" anchorOffsetY="0" anchorOffsetX="0">
+		<e:Group id="group_content" width="628" anchorOffsetY="0" height="691">
+			<e:Label text="尊敬的用户、为保障您的合法权益，请您在参加充返活动前仔细阅读本协议。在您点击“马上充值”按钮后，我们默认您已经知悉如下活动条款。" y="29" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="一、活动内容" y="199" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="二.活动时间" y="429" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="三、余额构成" y="619" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="四、充值余额使用规则" y="829" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="五、充值余额提现兑换规则" y="969" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="六、特别声明" y="1189" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="5" size="30" horizontalCenter="-0.5"/>
+			<e:Label text="单笔充值1~99元，不享受返现；\n单笔充值100~1999元，享受100%返现；\n单笔充值2000~9999元，享受100%返现；\n单笔充值10000元及以上，享受100%返现" y="242" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="-0.5"/>
+			<e:Label text="即日起至2017年8月31日24点\n随后充返活动力度将适时调整。" y="473" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="-0.5"/>
+			<e:Label text="您实际支付的充值金币加上万人猜涨跌的返现金币会构成您的账户余额。 \n例：单笔充值100，返现100，则账户余额为200。" y="665" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="-0.5"/>
+			<e:Label text="每笔充值余额提现兑换，需达到充值余额5倍以上交易流水，即可全部提现兑换，提现兑换10分钟之内到账。" y="1017" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="-0.5"/>
+			<e:Label text="1.请您根据自己的投资情况进行充值，万人猜涨跌对充值次数不设任何限制；\n \n2.充返活动福利仅提供给正当、合法使用万人猜涨跌游戏的用户。每位参与者的游戏账号、手机设备号、身份证号和微信号都必须是唯一的，任意信息与其他用户重复都不能参加该活动； 活动中，一旦发现有作弊及互刷行为，万人猜涨跌有权取消相关账户活动返现金币、追回作弊所得（对应赠送奖品）、回收账号使用权，并保留取消作弊人后续参与万人猜涨跌任何活动的权利，必要时会追究其法律责任； \n\n3.本次活动最终解释权归万人猜涨跌所有。" y="1237" anchorOffsetX="0" width="581" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="-0.5"/>
+			<e:Label text="余额可用于万人猜涨跌游戏的各类模式，无任何限制。" y="877" anchorOffsetX="0" width="601" fontFamily="Microsoft YaHei" lineSpacing="10" size="25" horizontalCenter="9.5"/>
+		</e:Group>
+		</e:Scroller>
+	</e:Group>
+	
+	
+</e:Skin>

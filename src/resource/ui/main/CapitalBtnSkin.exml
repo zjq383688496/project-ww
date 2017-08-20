@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin states="up,down,disabled" class="CapitalBtnSkinSkin" width="400" height="300" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="tab-bg-2_png" source.disabled="tab-bg-1_png"/>
+	<e:Label id="capital_btn_label"  name="capital_btn_label" text="" textAlign="center" horizontalCenter="0" verticalCenter="0" fontFamily="Microsoft YaHei"/>
+</e:Skin>

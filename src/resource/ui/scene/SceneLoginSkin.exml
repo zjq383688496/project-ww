@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneLoginSkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing">
+	<w:Config id="15b1538f97c" ></w:Config>
+	<e:Image id="imgBg" width="100%" height="100%" x="0" y="0" source="bg_png" fillMode="scale"/>
+	<e:Image id="bg_meinv" width="540" height="1046" y="218" anchorOffsetY="0" source="bg-meinv-b_png" anchorOffsetX="0" horizontalCenter="0"/>
+	<e:Group id="group_input" width="616" y="740" anchorOffsetX="0" anchorOffsetY="0" height="380" x="60">
+		<e:Image id="input_bg" width="100%" height="380" y="0" anchorOffsetX="0" anchorOffsetY="0" x="0" source="bg_login_input_png"/>
+		<e:Label text="密码" x="72" y="178" size="30" textColor="0x90b0d6" fontFamily="微软雅黑" width="100" height="50"/>
+		<e:Label text="账号" x="72" y="103" size="30" textColor="0x90b0d6" fontFamily="Microsoft YaHei"/>
+		<e:Button id="btn_login" label="" x="80" y="290" anchorOffsetX="0" width="192" anchorOffsetY="0" height="66">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                <e:Image width="90%" height="90%" width.down="100%" height.down="100%" horizontalCenter="0" verticalCenter="0" source="btn_login_png" source.down="btn_login_png"/>
+                <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+            </e:skinName>
+        </e:Button>
+		<e:Button id="btn_register" label="" x="350" y="290" anchorOffsetX="0" width="192" anchorOffsetY="0" height="66">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                <e:Image width="90%" height="90%" width.down="100%" height.down="100%" horizontalCenter="0" verticalCenter="0" source="btn_register_png" source.down="btn_register_png"/>
+                <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+            </e:skinName>
+        </e:Button>
+
+        
+        <e:Image width="338" height="51" x="195" y="92" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="input_account" width="338" height="51" text="" x="202.03" y="92" anchorOffsetX="0" anchorOffsetY="0" textColor="0x3a3333" size="25" verticalAlign="middle">
+        </e:EditableText>
+
+        <e:Image width="338" height="51" x="195" y="169.54" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="input_pwd" width="338" height="51" text="" x="202.03" y="169.54" anchorOffsetX="0" anchorOffsetY="0" size="25" textColor="0x3a3333" verticalAlign="middle" displayAsPassword="true"/>
+		<e:Label id="lb_forgetpwd" text="忘记密码？" x="421" y="233" fontFamily="Microsoft YaHei" size="25" italic="true"/>
+	</e:Group>
+</e:Skin>

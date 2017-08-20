@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CapitalListItemSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" width="480" height="80">
+	<e:Image id="user_avatar" width="60" height="60" x="9.4" source="" verticalCenter="0"/>
+	<e:Image id="vip_grade" width="40" height="40" x="80.55" source="" verticalCenter="0.5"/>
+	<e:Label id="user_name" x="141.25" size="27" anchorOffsetX="0" anchorOffsetY="0" fontFamily="Microsoft YaHei" textAlign="left" verticalAlign="top" text="" verticalCenter="0.5" textColor="0xffffff"/>
+	<e:Label id="balance" size="27" anchorOffsetX="0" anchorOffsetY="0" fontFamily="Microsoft YaHei" textAlign="right" verticalAlign="middle" text="1000" verticalCenter="0" textColor="0xfcdb16" right="4"/>
+
+
+</e:Skin>

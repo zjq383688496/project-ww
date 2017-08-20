@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" width="656" height="1000" horizontalCenter="0.5" top="55">
+		<e:Group id="bg_group" width="657" height="1000" y="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		</e:Group>
+		<e:Scroller width="641" height="750" y="216" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+			<e:Group anchorOffsetX="0" width="640" anchorOffsetY="0" height="751">
+			<e:Image width="874" height="672" y="67" horizontalCenter="0.5" x="49" scaleX="0.4" scaleY="0.4" source="icon_kline_help_11_png"/>
+			<e:Label text="我们提供了7个下注区域，分别对应不同的赔率" y="354" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-2.5" lineSpacing="10"/>
+				<e:Label text="每回合60秒，每30秒一个棒子，前30秒是下注时间，对应下注棒（空心棒）；后30秒是等待开奖时间，对应开奖棒（实心棒）" y="834" anchorOffsetX="0" width="590" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" lineSpacing="10" horizontalCenter="10.5"/>
+				<e:Label text="开奖结果以开奖棒的涨跌和收盘价末尾数字单双为准" y="974" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-9.5" lineSpacing="10"/>
+				<e:Label text="每回合结束时，我们都会公布开奖结果。" y="1484" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-9.5" lineSpacing="10"/>
+				<e:Label text="根据行情和趋势，预测涨跌和收盘价最后一位数的单双，押中即可获得相应赔率的奖励！" y="1674" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-9.5" lineSpacing="10"/>
+				<e:Label text="如图：开奖结果为 “下跌”，“跌单”。" y="1524" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-9.5" lineSpacing="10"/>
+				<e:Label text="" y="817" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-2.5" lineSpacing="10"/>
+				<e:Label text="如图：" y="454" anchorOffsetX="0" width="590" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="16.5"/>
+				<e:Label text="点击对应区域即可下注。" y="695" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" x="42"/>
+				<e:Label text="下方4个分别代表：“涨单”，“涨双”，“跌单”，“跌双”" y="544" anchorOffsetX="0" width="473" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="30" lineSpacing="5"/>
+				<e:Label text="上方3个分别代表：“涨”，“平”，“跌”" y="494" anchorOffsetX="0" width="521" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="54" lineSpacing="5"/>
+			<e:Label text="1，如何下注" x="22" y="15" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xf9bc27" size="33"/>
+				<e:Label text="2，如何判断输赢" x="22" y="785" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xF9BC27" size="33"/>
+				<e:Label text="简而言之：" x="32" y="1615" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xF9BC27" size="33"/>
+				<e:Image width="358" height="614" y="1071" source="icon_kline_help_12_png" scaleX="0.6" scaleY="0.6" horizontalCenter="0"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Image width="601.7" height="214.5" source="bg_rank_title_png" top="-23" horizontalCenter="1"/>
+		<e:Label text="下注帮助" y="46" fontFamily="Microsoft YaHei" size="40" textColor="0xF1DD19" strokeColor="0x4A2608" stroke="2" horizontalCenter="0"/>
+		<e:Image id="img_close" width="71" height="73" x="586" y="106" source="icon_close_png"/>
+
+
+
+	</e:Group>
+	
+	
+</e:Skin>

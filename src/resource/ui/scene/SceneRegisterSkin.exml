@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneRegisterSkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b16790fb3" ></w:Config>
+    <e:Image id="imgBg" height="100%" y="0" width="100%" x="0" source="bg_png"/>
+	<e:Image id="bg_meinv" width="540" height="1046" y="218" anchorOffsetY="0" source="bg-meinv-b_png" horizontalCenter="0"/>
+	<e:Group id="group_register" width="616" height="560" y="560" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0.5">
+		<e:Image width="616" height="560" y="0" horizontalCenter="0" source="bg_register_input_png"/>
+		<e:Image width="338" height="51" x="192.7" y="77" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="account_input" width="330" height="51" text="" x="197.7" y="77" anchorOffsetY="0" anchorOffsetX="0" textColor="0x3a3333" size="25" verticalAlign="middle" textAlign="left" prompt="电话"/>
+		<e:Image width="338" height="50" x="192.7" y="148.28" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="pwd_input" width="330" height="50" text="" x="197.7" y="148" anchorOffsetY="0" anchorOffsetX="0" size="25" textColor="0x3a3333" verticalAlign="middle" textAlign="left" prompt="密码" displayAsPassword="true"/>
+		<e:Image width="338" height="50" x="192.7" y="221.08" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="repwd_input" width="330" height="50" text="" x="197.7" y="222" anchorOffsetY="0" anchorOffsetX="0" size="25" textAlign="left" verticalAlign="middle" textColor="0x3a3333" prompt="确认密码" displayAsPassword="true"/>
+		<e:Image width="165" height="50" x="192.7" y="289.23" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="verifycode_input" width="160" height="50" text="" x="197.7" y="290" anchorOffsetY="0" anchorOffsetX="0" size="25" textAlign="left" verticalAlign="middle" textColor="0x3a3333" prompt="图形码"/>
+		<e:Image width="165" height="50" x="192.7" y="361.87" anchorOffsetX="0" anchorOffsetY="0" source="bg_text_input_png"/>
+		<e:EditableText id="otpcode_input" width="165" height="50" text="" x="197.7" y="362" anchorOffsetY="0" anchorOffsetX="0" size="25" verticalAlign="middle" textAlign="left" textColor="0x3a3333" prompt="验证码"/>
+
+
+		<e:Button id="btn_register" label="" y="478" anchorOffsetX="0" width="192" anchorOffsetY="0" height="66" horizontalCenter="-131">
+            <e:skinName>
+                <e:Skin states="up,down,disabled">
+                <e:Image width="90%" height="90%" width.down="100%" height.down="100%" horizontalCenter="0" verticalCenter="0" source="btn_register_png" source.down="btn_register_png"/>
+                <e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+            </e:skinName>
+        </e:Button>
+		<e:Button id="btn_cancel" label="" y="478" anchorOffsetX="0" width="192" anchorOffsetY="0" height="66" horizontalCenter="124">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="90%" height="90%" width.down="100%" height.down="100%" horizontalCenter="0" verticalCenter="0" source="cancel_btn_png" source.down="cancel_btn_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="138.24" height="50" x="384.13" y="290" anchorOffsetX="0" anchorOffsetY="0" source="bg_verify_code_png"/>
+		<e:Label id="btn_get_otp" text="获取验证码" x="387.25" y="370" size="25" bold="true" anchorOffsetX="0" width="130.45" anchorOffsetY="0" height="33.67"/>
+		<e:Label text="手机号" y="90" size="25" verticalAlign="middle" textAlign="center" textColor="0x90b0d6" bold="true" fontFamily="Microsoft YaHei" x="60"/>
+		<e:Label text="登录密码" y="161" size="25" verticalAlign="middle" textAlign="center" textColor="0x90b0d6" bold="true" fontFamily="Microsoft YaHei" x="60"/>
+		<e:Label text="验证码" y="375" size="25" verticalAlign="middle" textAlign="center" textColor="0x90b0d6" bold="true" fontFamily="Microsoft YaHei" x="60"/>
+		<e:Label text="图形码" y="302" size="25" verticalAlign="middle" textAlign="center" textColor="0x90b0d6" bold="true" fontFamily="Microsoft YaHei" x="60"/>
+		<e:Label text="确认密码" y="235" size="25" verticalAlign="middle" textAlign="center" textColor="0x90b0d6" bold="true" fontFamily="Microsoft YaHei" x="60"/>
+		<e:BitmapLabel id="verify_text" width="131" height="47" x="404" y="302" text="" anchorOffsetX="0" anchorOffsetY="0" font="otp_fnts_fnt"/>
+	
+	</e:Group>
+</e:Skin>

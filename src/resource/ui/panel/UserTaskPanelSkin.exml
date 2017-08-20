@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="TipPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group_content" width="670" height="840" anchorOffsetX="0" anchorOffsetY="0" verticalCenter="0" horizontalCenter="0">
+		<e:Group id="group_list" width="100%" height="100%">
+			<e:Image width="100%" height="100%" scaleX="1" scaleY="1" source="bg_user_task_png" horizontalCenter="0"/>
+			<e:Image width="255" height="130" y="-66" source="icon_user_task_png" horizontalCenter="0"/>
+			<e:Image width="630" height="684" y="116" anchorOffsetY="0" source="bg_user_task_list_png" horizontalCenter="-2"/>
+			<e:Scroller id="scroller_user_task" height="586" width="600" y="201.03" anchorOffsetY="0" horizontalCenter="1">
+				<e:viewport>
+				<e:List id="list_user_task" width="600" height="586" y="1" anchorOffsetY="0" horizontalCenter="0">
+					<e:layout>
+					<e:VerticalLayout/>
+					</e:layout>
+				</e:List>
+				</e:viewport>
+			</e:Scroller>
+			<e:Image width="689" height="240" horizontalCenter="1.5" source="icon_user_task_title_png" y="-107"/>
+			<e:Image id="img_close" width="80" height="80" x="599" y="-25" source="icon_close_png"/>
+			<e:Image width="340" height="80" y="79" source="icon_user_task_propagate_png" horizontalCenter="0"/>
+		</e:Group>
+	</e:Group>
+	
+	
+</e:Skin>

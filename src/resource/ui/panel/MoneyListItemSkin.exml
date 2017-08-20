@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin" width="630" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="70">
+	<e:Label id="lb_type" text="充值方式" x="25" height="100%" verticalCenter="0" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="22"/>
+	<e:Label id="lb_time" text="2017-08-09 09:08:21" x="277" height="100%" verticalCenter="0" textAlign="center" verticalAlign="middle" fontFamily="Arial" y="10" size="22"/>
+	<e:Label id="lb_amount" text="1000" x="114" height="100%" verticalCenter="0" textAlign="center" verticalAlign="middle" fontFamily="Arial" y="20" size="22" anchorOffsetX="0" width="155"/>
+	<e:Label id="lb_status" text="充值成功" x="510" height="100%" textAlign="center" verticalAlign="middle" fontFamily="Arial" anchorOffsetX="0" width="104" y="0" size="22"/>
+</e:Skin>

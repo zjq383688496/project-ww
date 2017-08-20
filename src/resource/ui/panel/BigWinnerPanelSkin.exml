@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopUISkin" width="300" height="150" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" width="100%" height="100%" y="200">
+		<e:Image width="247" height="100" verticalCenter="0" source="bg_dialog_bigwinner_png" x="0" y="25" scaleX="1" scaleY="1"/>
+		<e:Image id="img_vip" width="30" height="30" x="4.32" y="44" scaleX="1" scaleY="1" source=""/>
+		<e:Label id="lb_name" text="" x="40.05" y="53.03" stroke="2" strokeColor="0x9b3810" size="18" fontFamily="Microsoft YaHei" scaleX="1" scaleY="1"/>
+		<e:Label id="lb_profit" text="" x="30.979999999999997" y="78.66" size="23" textColor="0xfec73a" stroke="2" strokeColor="0x472009" scaleX="1" scaleY="1"/>
+	</e:Group>
+	<!--<e:Button id="btn_close" label="关闭" x="318" y="1059"/>-->
+	
+</e:Skin>

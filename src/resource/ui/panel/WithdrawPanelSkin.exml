@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopUISkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group_product" width="631" height="1000" y="110" x="44">
+		<e:Group id="group_content" width="631" height="1000" y="0" horizontalCenter="1" anchorOffsetY="0" x="1" scaleX="1" scaleY="1">
+			<e:Label id="lb_balance" text="0" x="178.2" y="102.56" size="35" anchorOffsetX="0" anchorOffsetY="0" height="40.33" textColor="0xF9BC27" verticalAlign="middle"/>
+			<e:Image id="img_close" width="67" height="67" x="559" y="11" source="icon_close_pink_png"/>
+			<e:Image id="img_withdraw_title" width="181" height="52" y="17" horizontalCenter="0" source="icon_withdraw_title_png"/>
+			<e:Scroller id="scroller" height="620" width="600" y="180" horizontalCenter="0.5" anchorOffsetY="0">
+			<e:viewport>
+				<e:List id="withdrawList" width="600" height="620" y="1" anchorOffsetY="0" horizontalCenter="0">
+				<e:layout>
+					<e:VerticalLayout/>
+				</e:layout>
+				</e:List>
+			</e:viewport>
+			<e:Skin>
+				<e:VScrollBar id="verticalScrollBar" width="8" minHeight="100%" height="100%" right="0">
+				<e:Skin>
+					<e:Image id="thumb" width="8" source="hScrollBar01_png" scale9Grid="1,1,4,4"/>
+				</e:Skin>
+				</e:VScrollBar>
+			</e:Skin>
+			</e:Scroller>
+			<e:Image id="img_gold" width="55" height="55" x="120.6" y="97.2" source="icon-jinbei_png"/>
+			<e:Image id="img_qrcode" width="90" height="90" x="519" y="813" source="icon_customer_service_qrcode_png"/>
+			<e:Label text="红包使用：" x="20" y="820" fontFamily="Microsoft YaHei" size="25"/>
+			<e:Image id="img_withdraw_detail" width="150" height="50" x="452" y="98" source="icon_btn_withdraw_png"/>
+			<e:Label id="lb_withdraw_detail" text="兑换明细" x="452" y="97" width="150" height="50" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="25" touchEnabled="false" textColor="0x442f38"/>
+			<e:Label text="客服微信：HLcai10001" x="396" y="917" size="20" fontFamily="Microsoft YaHei" anchorOffsetY="0" height="24" anchorOffsetX="0" width="225" textColor="0xe48c43" textAlign="center"/>
+			<e:Label text="兑换后你将获得红包兑换码，携兑换码联系客服" x="17" y="859" size="20" fontFamily="Microsoft YaHei" textColor="0xc6a1dc"/>
+			<e:Label text="客服工作时间：工作日 9:00 - 17:00" x="17" y="891" size="20" fontFamily="Microsoft YaHei" textColor="0xC6A1DC"/>
+			<e:Label text="点击右侧二维码联系客服" x="17" y="923" size="20" fontFamily="Microsoft YaHei" textColor="0xC6A1DC"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="group_dialog_parent" width="100%" height="100%" x="0" y="0">
+		<e:Group id="group_dialog" width="631" height="300" y="400" x="44" scaleX="1" scaleY="1">
+		<e:Label id="lb_notice" text="提示" y="17" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textColor="0xfdf9e3" horizontalCenter="0.5"/>
+		<e:Label id="lb_dialog_content_1" text="您确定要兑换礼品?" y="100" fontFamily="Microsoft YaHei" textColor="0xfdf9e3" horizontalCenter="0"/>
+			<e:Label id="lb_dialog_content_2" text="" y="149" fontFamily="Microsoft YaHei" textColor="0xFDF9E3" x="316"/>
+		<e:Image id="img_return" width="123.5" height="52.2" x="117" y="222" source="icon_btn_return_png"/>
+		<e:Image id="img_ok" width="123.5" height="52.2" x="397" y="222" source="icon_btn_ok_png"/>
+		</e:Group>
+	</e:Group>
+	<e:Group id="group_detail" width="631" height="620" y="295" x="44">
+		<e:Image id="img_detail_close" width="67" height="67" x="565" y="-1" source="icon_close_pink_png" scaleX="1" scaleY="1"/>
+		<e:Label id="lb_detail_title" text="兑换记录" y="16" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textColor="0xFDF9E3" horizontalCenter="0.5" x="286" bold="true"/>
+		<e:Label id="lb_detail_title_name" text="奖品名称" y="86" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textColor="0xFDF9E3" horizontalCenter="36.5" x="296" bold="true" size="25"/>
+		<e:Label id="lb_detail_title_status" text="兑换状态" y="85" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textColor="0xFDF9E3" horizontalCenter="230.5" x="306" bold="true" size="25"/>
+		<e:Label id="lb_detail_title_date" text="日期" y="86" scaleX="1" scaleY="1" fontFamily="Microsoft YaHei" textColor="0xFDF9E3" horizontalCenter="-193.5" x="306" bold="true" size="25"/>
+		<e:Scroller id="scroller_detail" height="468" width="600" y="126" horizontalCenter="0.5" anchorOffsetY="0">
+			<e:viewport>
+			<e:List id="list_detail" width="600" height="468" y="1" anchorOffsetY="0" horizontalCenter="0">
+				<e:layout>
+				<e:VerticalLayout/>
+				</e:layout>
+			</e:List>
+			</e:viewport>
+		</e:Scroller>
+	</e:Group>
+	<!--<e:Button id="btn_close" label="关闭" x="318" y="1059"/>-->
+	
+</e:Skin>

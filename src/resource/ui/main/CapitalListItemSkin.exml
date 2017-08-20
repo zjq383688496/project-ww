@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="CapitalListItemSkin" width="630" height="176" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Button id="btn_capital" width="561" height="176" horizontalCenter="0" verticalCenter="0">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image id="img_capital" width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+	<e:Image width="200" height="34" x="79.04" y="115.01" source="bg_online_black_png" touchEnabled="false"/>
+	<e:Label id="lb_online_num" text="" x="186.1" y="115.34" height="34" size="19" anchorOffsetX="0" textAlign="center" verticalAlign="middle" fontFamily="Arial" width="53.06" textColor="0xF9BC27" touchEnabled="false"/>
+	<e:Label text="在线" x="148.87" y="115.34" size="19" fontFamily="Microsoft YaHei" height="34" verticalAlign="middle" textAlign="center" touchEnabled="false"/>
+	<e:Label text="人" x="239.57" y="115.34" size="19" fontFamily="Microsoft YaHei" height="34" verticalAlign="middle" textAlign="center" anchorOffsetX="0" width="17.4" touchEnabled="false"/>
+
+</e:Skin>

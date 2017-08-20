@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopUISkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group_detail" width="719" height="1199" x="0" y="0" visible="false">
+		<e:Image width="719" height="800" y="173.4" horizontalCenter="0" source="bg_my_history_detail_png"/>
+		<e:Image id="img_detail_close" width="71" height="73" x="635" y="266.55" source="icon_close_png"/>
+		<e:Label id="lb_qishu" text="" x="53.44" y="303.76" fontFamily="Microsoft YaHei" size="33"/>
+		<e:Label id="lb_capital" text="" x="181" y="303.76" fontFamily="Microsoft YaHei" size="33"/>
+		<e:Label text="开  盘  价：" x="48" y="374" size="27" fontFamily="Microsoft YaHei" width="140"/>
+		<e:Label id="lb_open_price" text="" x="201" y="374" size="27" fontFamily="Arial" width="140" textAlign="left" verticalAlign="middle"/>
+		<e:Label text="收  盘  价：" x="48" y="423.6" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Label id="lb_close_price" text="" x="201" y="423.6" size="27" fontFamily="Arial" width="140" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="点        差：" x="378" y="374" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Image width="110" height="35" x="532" y="371" source="bg_round_remain_png"/>
+		<e:Label id="lb_point_diff" text="" x="532" y="371" size="27" fontFamily="Arial" width="110" height="35" verticalAlign="middle" textAlign="center"/>
+		<e:Label id="lb_settle_result" text="开奖结果：" x="378" y="423.6" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Label text="庄家盈利：" x="378" y="518.18" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Label id="lb_banker_total_profit" text="" x="532" y="515.18" size="27" fontFamily="Arial" width="160" height="35" textAlign="left"/>
+		<e:Label text="总  人  数：" x="378" y="470.63" size="27" fontFamily="Microsoft YaHei" visible="false"/>
+		<e:Label id="lb_total_person" text="" x="532" y="466.63" size="27" fontFamily="Arial" width="140" height="35" verticalAlign="middle" textAlign="left" visible="false"/>
+		<e:Label text="我的盈利：" x="48" y="518.18" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Image width="160" height="35" x="201" y="515.18" source="icon-input_png"/>
+		<e:Label id="lb_my_total_profit" text="" x="201" y="515.18" size="27" fontFamily="Arial" width="160" height="35" verticalAlign="middle" textAlign="center" anchorOffsetX="0" textColor="0xf9bc27"/>
+		<e:Label text="总  下  注：" x="48" y="470.63" size="27" fontFamily="Microsoft YaHei"/>
+		<e:Label id="lb_total_bet" text="" x="201" y="467.63" size="27" fontFamily="Arial" textColor="0xf9bc27" width="140" height="35" verticalAlign="middle" textAlign="left"/>
+		<e:Label text="区间" x="77" y="593.39" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="倍数" x="204" y="593.39" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="我的下注" x="357" y="593.39" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Label text="我的盈利" x="548" y="593.39" size="25" fontFamily="Microsoft YaHei"/>
+		<e:Image id="img_capital" width="53" height="53" x="313.92" y="295.32" source="icon_btccny_png"/>
+		<e:Scroller id="scroller_my_trade" width="611" height="250" x="60" y="630.82" anchorOffsetY="0" anchorOffsetX="0">
+			<e:Group id="group_my_trade" width="600" height="250" y="-15.15"/>
+		</e:Scroller>
+	</e:Group>
+	<e:Group id="group_list" width="719" height="1199" y="0" x="0">
+		<e:Image width="719" height="900" source="bg_rank_png" anchorOffsetY="0" verticalCenter="0.5" horizontalCenter="3"/>
+		<e:Button id="btn_my_history" label="" x="70.98" width="289" height="55" scaleX="1" scaleY="1" y="245.9" enabled="false">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bg_left_btn_normal_png" source.disabled="bg_left_btn_selected_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Button id="btn_banker_profit" label="" x="359.98" width="289" height="55" scaleX="1" scaleY="1" y="245.9">
+			<e:skinName>
+			<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" source="bg_right_btn_normal_png" source.disabled="bg_right_btn_selected_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="630" height="660" y="373" horizontalCenter="0.5" source="bg_rank_list_png"/>
+		<e:Image width="547" height="195" source="bg_rank_title_png" top="53" horizontalCenter="0"/>
+		<e:Image id="img_close" width="71" height="73" x="642" y="162" source="icon_close_png"/>
+		<e:Label text="庄家战绩" x="444" y="256" fontFamily="Microsoft YaHei" touchEnabled="false"/>
+		<e:Label text="我的竞猜" x="168" y="255" fontFamily="Microsoft YaHei" touchEnabled="false"/>
+		
+		<e:Scroller id="scroller_history_list" height="600" width="630" y="421" horizontalCenter="0.5" anchorOffsetY="0" bounces="false">
+			<e:viewport>
+				<e:List id="settleHistoryList" width="630" height="600" y="1" anchorOffsetY="0" horizontalCenter="0">
+					<e:layout> 
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:List>
+			</e:viewport>
+			<e:Skin>
+				<e:VScrollBar id="verticalScrollBar" width="8" minHeight="100%" height="100%" right="0">
+				<e:Skin>
+					<e:Image id="thumb" width="8" source="hScrollBar01_png"  scale9Grid="1,1,4,4"/>
+				</e:Skin>
+				</e:VScrollBar>
+			</e:Skin>
+			
+		</e:Scroller>
+		<e:Image width="173" height="44" y="111" source="icon_history_title_png" horizontalCenter="0"/>
+		<e:Group id="group_my_title" width="630" height="44" x="45" y="376">
+			<e:Label id="lb_title_1" text="期数" y="0" width="100" x="0" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1" anchorOffsetX="0"/>
+			<e:Label id="lb_title_2" text="资产类型" y="0" width="126" x="76" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_3" text="开奖结果" y="0" width="126" x="182" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_4" text="下注金额" y="0" width="126" x="298" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_5" text="战绩" y="0" width="126" x="415" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_10" text="详情" y="0" width="126" x="518" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="group_banker_title" width="630" height="44" x="45" y="376" visible="false">
+			<e:Label id="lb_title_0" text="期数" y="0" width="80" x="12" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_6" text="资产类型" y="0" width="100" x="94" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_7" text="庄家" y="0" width="140" x="202" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_8" text="开奖结果" y="0" width="126" x="347" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+			<e:Label id="lb_title_9" text="庄家战绩" y="0" width="126" x="506" fontFamily="Microsoft YaHei" textAlign="center" anchorOffsetY="0" height="44" verticalAlign="middle" size="22" scaleX="1" scaleY="1"/>
+		</e:Group>
+		<e:Group id="group_capital" width="611" height="60" y="314" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+			<e:Image width="100" height="58" y="2" source="bg_round_remain_png" anchorOffsetY="0" left="0"/>
+		</e:Group>
+
+
+	</e:Group>
+	<!--<e:Button id="btn_close" label="关闭" x="318" y="1059"/>-->
+	
+</e:Skin>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ChatBarSkin" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b71be2184" ></w:Config>
+	<e:Group id="group">
+		<e:Group id="group_content" scaleX="1" scaleY="1"/>
+	</e:Group>
+</e:Skin>

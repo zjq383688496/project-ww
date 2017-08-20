@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SceneTradeSkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" xmlns:ns1="*" >
+	<w:Config id="15b1679dd82" ></w:Config>
+	<e:Image width="100%" height="100%" x="0" y="0" source="bg_png"/>
+	<e:Image width="426" height="971" y="224" source="bg-meinv_png" anchorOffsetY="0" horizontalCenter="0" visible="false"/>
+	<e:Group id="groupFooter" width="100%" height="72" x="0" y="1127" anchorOffsetX="0" anchorOffsetY="0" visible="false">
+		
+	</e:Group>
+</e:Skin>

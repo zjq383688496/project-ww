@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopUISkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="719" height="1199" y="0" x="0">
+		<e:Image width="719" height="900" source="bg_rank_png" anchorOffsetY="0" verticalCenter="0.5" horizontalCenter="3"/>
+		<e:Group id="group_capital" width="611" height="60" y="245" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+			<e:Image width="100" height="58" y="2" source="bg_round_remain_png" anchorOffsetY="0" left="0"/>
+		</e:Group>
+		<e:Image width="630" height="727" y="306" horizontalCenter="0.5" source="bg_rank_list_png" anchorOffsetY="0"/>
+		<e:Image width="547" height="195" source="bg_rank_title_png" top="53" horizontalCenter="0"/>
+		<e:Image id="img_close" width="71" height="73" x="642" y="162" source="icon_close_png"/>
+		<e:Label text="走势" y="112" fontFamily="Microsoft YaHei" size="40" textColor="0xF1DD19" strokeColor="0x4A2608" stroke="2" horizontalCenter="0.5"/>
+		
+		<e:Scroller id="scroller_history_list" height="625" width="600" y="391" horizontalCenter="0.5" anchorOffsetY="0" bounces="false">
+			<e:viewport>
+				<e:List id="settleHistoryList" width="600" height="625" y="-37" anchorOffsetY="0" horizontalCenter="0" anchorOffsetX="0">
+					<e:layout> 
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:List>
+			</e:viewport>
+			<e:Skin>
+				<e:VScrollBar id="verticalScrollBar" width="8" minHeight="100%" height="100%" right="0">
+				<e:Skin>
+					<e:Image id="thumb" width="8" source="hScrollBar01_png"  scale9Grid="1,1,4,4"/>
+				</e:Skin>
+				</e:VScrollBar>
+			</e:Skin>
+			
+		</e:Scroller>
+		<e:Group id="goup_title" width="600" height="76" y="314" anchorOffsetY="0" horizontalCenter="0.5">
+			<e:Label text="期数" x="0" y="0" width="50" height="100%" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" size="25"/>
+			<e:Group id="group_odds_3" width="60" height="100%" x="57" verticalCenter="0">
+				<e:Button id="btn_odds_3" label="" width="60" height="60" scaleX="1" scaleY="1" verticalCenter="0">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+						<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_3" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_3" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_4" width="60" height="100%" x="117" verticalCenter="0" y="10">
+				<e:Button id="btn_odds_0" label="" width="60" height="60" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+					<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_4" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_4" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_5" width="60" height="100%" x="177" verticalCenter="0" y="20">
+				<e:Button id="btn_odds_1" label="" width="60" height="60" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+					<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_5" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_5" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_6" width="60" height="100%" x="237" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_2" label="" width="60" height="60" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+					<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_6" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_6" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_1" width="60" height="100%" x="299" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_9" label="" width="60" height="60" scaleX="1" scaleY="1" horizontalCenter="0" verticalCenter="0">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+						<e:Image width="100%" height="100%" source="btn_equal_png" source.down="btn_equal_pressed_png" source.disabled="btn_equal_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image width="30" height="30" x="0.7" y="8" source="icon-pings_png" touchEnabled="false" scaleX="1" scaleY="1"/>
+				<e:Label id="label_odds_1" text="" y="32.5" fontFamily="lgzbFont" bold="true" anchorOffsetX="0" width="60" size="22" touchEnabled="false" textAlign="center" strokeColor="0x000000" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" horizontalCenter="0"/>
+			</e:Group>
+			<e:Group id="group_odds_7" width="60" height="100%" x="361" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_5" label="" width="60" height="60" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:game="game.*"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_7" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_7" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_8" width="60" height="100%" x="422" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_6" label="" width="60" height="60" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:game="game.*"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_8" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_8" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_9" width="60" height="100%" x="483" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_7" label="" width="60" height="60" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:game="game.*"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_9" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_9" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+			<e:Group id="group_odds_10" width="60" height="100%" x="544" verticalCenter="0" y="30">
+				<e:Button id="btn_odds_8" label="" width="60" height="60" verticalCenter="0">
+					<e:skinName>
+						<e:Skin states="up,down,disabled">
+						<e:Image width="100%" height="100%" source="btn_odds_fall_png" source.down="btn_odds_fall_pressed_png" source.disabled="btn_odds_fall_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0" xmlns:game="game.*"/>
+						</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_10" text="" anchorOffsetY="0" height="20" size="12" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1" y="10"/>
+				<e:Label id="label_odds_10" text="" anchorOffsetY="0" height="20" size="20" fontFamily="lgzbFont" anchorOffsetX="0" width="60" textAlign="center" verticalAlign="middle" bold="true" textColor="0xFFFFFF" touchEnabled="false" stroke="1" scaleX="1" scaleY="1" y="40"/>
+			</e:Group>
+		</e:Group>
+
+
+	</e:Group>
+	<!--<e:Button id="btn_close" label="关闭" x="316" y="1059"/>-->
+	
+</e:Skin>

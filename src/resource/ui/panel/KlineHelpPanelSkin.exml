@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="HelpPanel" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group id="group" width="656" height="1000" horizontalCenter="0.5" top="55">
+		<e:Group id="bg_group" width="657" height="1000" y="1" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		</e:Group>
+		<e:Scroller width="641" height="750" y="216" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="0">
+			<e:Group anchorOffsetX="0" width="640" anchorOffsetY="0" height="751">
+			<e:Image width="546" height="246.4" y="67" horizontalCenter="0.5" source="icon_kline_help_1_png" x="49" scaleX="1" scaleY="1"/>
+			<e:Label text="点差 = 收盘价 - 开盘价" y="334" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-2.5"/>
+				<e:Label text="界面下方有11个下注按钮，对应11个点差区间，您可分析走势进行点击下注。" y="1050.63" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-2.5" lineSpacing="5"/>
+				<e:Label text="一个回合60秒，30秒一个棒子。前30秒是下注时间，对应下注棒(空心棒); 后30秒是等待开奖时间，对应开奖棒(实心棒)。" y="1783.87" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-1.5" lineSpacing="5"/>
+				<e:Label text="例如：" y="1401.91" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-3.5"/>
+			<e:Label text="1，点差" x="22" y="15" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xf9bc27" size="33"/>
+				<e:Label text="3，如何下注" x="22" y="993.62" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xf9bc27" size="33"/>
+				<e:Label text="2，点差区间" x="18.67" y="468.33" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xF9BC27" size="33"/>
+				<e:Label text="4，如何判断输赢" x="22" y="1722.23" anchorOffsetX="0" width="591" anchorOffsetY="0" fontFamily="Microsoft YaHei" textColor="0xf9bc27" size="33"/>
+				<e:Label text="根据行情猜点差区间，猜中即可获得相应赔率的奖励！" x="58.66" y="2938.89" anchorOffsetX="0" width="519" anchorOffsetY="0" fontFamily="Microsoft YaHei" lineSpacing="10" textColor="0xffffff"/>
+			<e:Label text="17681.67 - 17671.98 = 上涨 9.69" x="42.97" y="374.33" size="30" fontFamily="Microsoft JhengHei" anchorOffsetX="0" width="566"/>
+				<e:Label text="我们提供了11个点差区间，和下方下注按钮一一对应。" x="40" y="522.01" size="30" fontFamily="Microsoft JhengHei" anchorOffsetX="0" width="596" lineSpacing="5"/>
+				<e:Label text="例如：上图中点差 9.69 位于上涨区间 &gt; 0和上涨区间 6 - 15" y="876.34" size="30" fontFamily="Microsoft JhengHei" anchorOffsetX="0" width="583" lineSpacing="5" x="30.68"/>
+				<e:Button id="btn_odds_4" label="" x="60.7" y="1565.19" width="83" height="85" scaleX="1" scaleY="1">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+						<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_odds_rise_png" source.down="btn_odds_rise_pressed_png" source.disabled="btn_odds_rise_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Label id="label_interval_4" text="15 - 26" x="67.19" y="1566.3" anchorOffsetY="0" height="27.33" size="18" fontFamily="lgzbFont" anchorOffsetX="0" width="77" textAlign="center" verticalAlign="middle" bold="true" touchEnabled="false" stroke="1" textColor="0xF5DEAB" scaleX="1" scaleY="1"/>
+				<e:Label id="label_odds_4" text="x8" x="67.86" y="1612.86" anchorOffsetY="0" height="27.33" size="27" fontFamily="lgzbFont" anchorOffsetX="0" width="74" textAlign="center" verticalAlign="middle" textColor="0xFFFFFF" bold="true" touchEnabled="false" stroke="1" scaleX="1" scaleY="1"/>
+				<e:Label text="代表：上涨点差区间 &gt; 0，1.5倍赔率" x="187.01" y="1484.26" anchorOffsetX="0" width="439.33" size="25" fontFamily="Microsoft JhengHei" lineSpacing="10"/>
+				<e:Label text="代表：上涨点差区间 15 - 26，8倍赔率" x="187.01" y="1592.95" anchorOffsetX="0" width="442.33" size="25" fontFamily="Microsoft JhengHei" lineSpacing="10"/>
+				<e:Image width="442" height="243" y="2041.25" source="icon_kline_help_2_png" horizontalCenter="-8.5"/>
+				<e:Image width="481.2" height="211.2" y="2400.65" source="icon_kline_help_3_png" horizontalCenter="0"/>
+				<e:Label text="开奖结果以开奖棒的点差区间为准。每回合开奖我们都会显示获胜区间，如图：" y="1917.23" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-0.5" lineSpacing="5"/>
+				<e:Label text="开奖区间为上涨 15 - 26（点差上涨20.16）" y="2339.97" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-0.5" lineSpacing="5"/>
+				<e:Label text="例如：您下注了上图两个按钮各1万金币" y="2651.91" anchorOffsetX="0" width="552" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="-0.5" lineSpacing="5"/>
+				<e:Label text="您将获得 15000 + 80000 = 95000 金币奖励！" y="2786.58" anchorOffsetX="0" width="593.33" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="20" lineSpacing="5"/>
+				<e:Label text="简言而之：" y="2885.24" anchorOffsetX="0" width="593.33" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="33" horizontalCenter="-6" lineSpacing="5" textColor="0xf9bc27"/>
+				<e:Label text="10000 x 1.5 = 15000" y="2691.9" anchorOffsetX="0" width="406.67" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="46" lineSpacing="5"/>
+				<e:Label text="10000 x   8 = 80000" y="2729.23" anchorOffsetX="0" width="437.33" anchorOffsetY="0" fontFamily="Microsoft YaHei" size="30" horizontalCenter="61" lineSpacing="5"/>
+				<e:Button id="btn_odds_0" label="" x="50.03" y="1459.08" width="120" height="84">
+					<e:skinName>
+					<e:Skin states="up,down,disabled" xmlns:game="game.*">
+						<e:Image width="100%" height="100%" width.down="100%" height.down="100%" source="btn_rise_png" source.down="btn_rise_pressed_png" source.disabled="btn_rise_pressed_png"/>
+						<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+					</e:skinName>
+				</e:Button>
+				<e:Image width="57" height="49" x="50.35" y="1459.57" source="icon-zhang_png" touchEnabled="false"/>
+				<e:Image width="80" height="32" x="75.02" y="1486.55" source="icon_rise_1.5_png" touchEnabled="false"/>
+				<e:Image width="533" height="227" y="1145.65" horizontalCenter="0" source="icon_kline_help_4_png"/>
+				<e:Image width="533" height="227" y="622.34" horizontalCenter="0" source="icon_kline_help_4_png"/>
+			</e:Group>
+		</e:Scroller>
+		<e:Image width="601.7" height="214.5" source="bg_rank_title_png" top="-23" horizontalCenter="1"/>
+		<e:Label text="下注帮助" y="46" fontFamily="Microsoft YaHei" size="40" textColor="0xF1DD19" strokeColor="0x4A2608" stroke="2" horizontalCenter="0"/>
+		<e:Image id="img_close" width="71" height="73" x="586" y="106" source="icon_close_png"/>
+
+
+
+	</e:Group>
+	
+	
+</e:Skin>

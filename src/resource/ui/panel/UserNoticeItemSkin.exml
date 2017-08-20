@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<e:Skin class="ShopItemSkin" width="719" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing" height="100">
+	<e:Image id="user_avatar" width="70" height="70" x="10.4" source="" verticalCenter="0"/>
+	<e:Image id="vip_grade" width="50" height="50" x="89.8" source="" verticalCenter="0"/>
+	<e:Label id="lb_message" text="" x="151" width="558" size="25" fontFamily="Microsoft YaHei" anchorOffsetY="0" lineSpacing="15" anchorOffsetX="0" height="80" verticalCenter="0" verticalAlign="middle"/>
+
+
+</e:Skin>

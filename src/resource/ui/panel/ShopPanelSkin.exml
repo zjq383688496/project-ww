@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="ShopUISkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:w="http://ns.egret.com/wing">
+	<e:Group width="660" height="1000" y="109.99" horizontalCenter="0.5" anchorOffsetY="0" visible="false">
+		<e:Image width="660" height="1000" horizontalCenter="0" source="bg_shop_png"/>
+		<e:Image id="img_close1" width="71" height="73" x="580.68" y="-13" source="icon_close_pink_png"/>
+		
+		<e:Scroller id="scroller_shop" height="455" width="550" y="398.03" anchorOffsetY="0" x="58">
+			<e:viewport>
+				<e:List id="shopList" width="550" height="455" y="-5" anchorOffsetY="0" horizontalCenter="0">
+					<e:layout> 
+						<e:VerticalLayout/>
+					</e:layout>
+				</e:List>
+			</e:viewport>
+			<e:Skin>
+				<e:VScrollBar id="verticalScrollBar" width="8" minHeight="100%" height="100%" right="0">
+				<e:Skin>
+					<e:Image id="thumb" width="8" source="hScrollBar01_png"  scale9Grid="1,1,4,4"/>
+				</e:Skin>
+				</e:VScrollBar>
+			</e:Skin>
+			
+		</e:Scroller>
+		<e:Image width="359" height="98" x="46" y="13" source="icon_shop_topup_gift_png"/>
+		<e:Image width="122" height="120" x="-4" y="24" source="icon_shop_first_topup_png"/>
+		<e:Image width="86" height="39" x="16.37" y="100.35" source="icon_shop_first_topup_text_png"/>
+		<e:Group id="group_topup_return_1" width="550" height="120" y="143.08" x="59.08" anchorOffsetY="0">
+			<e:Image width="550" height="120" source="bg_shop_item_png" scaleX="1" scaleY="1"/>
+			<e:Image width="90" height="90" x="15.24" scaleX="1" scaleY="1" source="icon_home_first_topup_png" verticalCenter="-12"/>
+			<e:Label id="lb_amount_1" text="" x="121" y="17" fontFamily="Arial" size="32" textColor="0xffffff"/>
+			<e:Label id="lb_des_1" text="" x="126" y="59.71" fontFamily="Microsoft YaHei" textColor="0x95759e" size="18" lineSpacing="5" anchorOffsetX="0" width="270"/>
+
+			<e:Button id="btn_buy_gold_1" label="" x="409.82" width="116.67" height="53" verticalCenter="0">
+				<e:skinName>
+					<e:Skin states="up,down,disabled">
+					<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_green_png" source.down="btn_green_png"/>
+					<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+					</e:Skin>
+				</e:skinName>
+			</e:Button>
+			<e:Label id="lb_price_1" text="100元" x="412" anchorOffsetX="0" width="112.67" anchorOffsetY="0" height="44" textAlign="center" verticalAlign="middle" fontFamily="Arial" touchEnabled="false" verticalCenter="-1.5" size="25"/>
+			<e:Label id="lb_amount_11" text="" x="284" y="24" size="22" fontFamily="Arial" textColor="0xf9bc27"/>
+		</e:Group>
+		<e:Group id="group_topup_return_2" width="550" height="120" y="268.08" x="59.08" anchorOffsetY="0">
+			<e:Image width="550" height="120" source="bg_shop_item_png" scaleX="1" scaleY="1"/>
+			<e:Image width="90" height="90" x="15.24" scaleX="1" scaleY="1" source="icon_home_first_topup_png" verticalCenter="-10"/>
+			<e:Label id="lb_amount_2" text="" x="121" y="16.67" fontFamily="Arial" textColor="0xFFFFFF" size="32"/>
+			<e:Label id="lb_amount_22" text="" x="287" y="24" size="22" fontFamily="Arial" textColor="0xF9BC27"/>
+			<e:Label id="lb_des_2" text="" x="126" y="58.71" fontFamily="Microsoft YaHei" textColor="0x95759E" size="18" lineSpacing="5" width="270"/>
+			<e:Button id="btn_buy_gold_2" label="" x="409.82" width="116.67" height="53" verticalCenter="0">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_green_png" source.down="btn_green_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+			</e:Button>
+			<e:Label id="lb_price_2" text="100元" x="412" anchorOffsetX="0" width="112.67" anchorOffsetY="0" height="44" textAlign="center" verticalAlign="middle" fontFamily="Arial" touchEnabled="false" verticalCenter="-1.5" size="25"/>
+		</e:Group>
+		<e:Label id="lb_topup_vip_1" text="兑换比例:" x="66" y="891.65" fontFamily="Microsoft YaHei" size="25"/>
+		<e:Label id="lb_current_vip_grade" text="1元 = 10000金币" x="66" y="929.64" fontFamily="Arial" size="25" textColor="0xf9bc27"/>
+		<e:Button id="btn_withdraw" label="" x="393.83" y="903.13" width="222" height="46">
+			<e:skinName>
+				<e:Skin states="up,down,disabled">
+				<e:Image width="100%" height="100%" width.down="90%" height.down="90%" horizontalCenter="0" verticalCenter="0" source="btn_vip_detail_png" source.down="btn_vip_detail_png"/>
+				<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+				</e:Skin>
+			</e:skinName>
+		</e:Button>
+		<e:Image width="104" height="59" x="8" y="197" source="icon_shop_diaosi_png"/>
+		<e:Image width="104" height="59" x="8" y="321" source="icon_shop_banker_png"/>
+
+
+	</e:Group>
+	<e:Image width="719" height="1199" source="bg_shop_new_png" y="-61"/>
+	<e:Group id="group_product_0" width="229" height="270" x="108" y="268" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group id="group_product_1" width="229" height="270" x="373" y="268" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Group width="229" height="270" x="109" y="548" anchorOffsetX="0" anchorOffsetY="0" id="group_product_2"/>
+	<e:Group width="229" height="270" x="372" y="547" anchorOffsetX="0" anchorOffsetY="0" id="group_product_3"/>
+	<e:Group width="229" height="275" x="107" y="825" anchorOffsetX="0" anchorOffsetY="0" id="group_product_4"/>
+	<e:Group width="229" height="275" x="372" y="825" anchorOffsetX="0" anchorOffsetY="0" id="group_product_5"/>
+	<e:Group id="group_no_return" width="270" height="53" x="358" y="194" anchorOffsetX="0" anchorOffsetY="0"/>
+	<e:Image id="img_close" width="71" height="73" x="647" y="110" source="icon_close_png"/>
+	<e:Group id="group_topup_return_introduce" width="64" height="51" x="287" y="193" anchorOffsetX="0" anchorOffsetY="0"/>
+	<!--<e:Button id="btn_close" label="关闭" x="318" y="1059"/>-->
+	
+</e:Skin>

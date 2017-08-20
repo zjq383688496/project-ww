@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<e:Skin class="SignPanelSkin" width="719" height="1199" xmlns:e="http://ns.egret.com/eui" xmlns:game="game.*" xmlns:w="http://ns.egret.com/wing" >
+	<w:Config id="15b3992e99e" ></w:Config>
+	<e:Group width="717" height="1004" y="70" anchorOffsetX="0" anchorOffsetY="0" horizontalCenter="0">
+		<e:Image width="717" height="1004" y="1" source="bg_sign_png" horizontalCenter="0"/>
+		<e:Group width="582" height="233" y="222" anchorOffsetY="0" anchorOffsetX="0" horizontalCenter="2.5">
+			<e:Image width="24" height="24" x="477.95" y="14" source="small_star_png"/>
+			<e:Image width="24" height="24" x="87" y="14" source="small_star_png"/>
+			<e:Image width="277" height="37" y="10" source="bg_sign_title_png" horizontalCenter="0.5"/>
+			<e:Label id="sign_title" text="3月1日- 3月31日期间" x="167" y="14" width="251" height="29" size="25" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0xb88551" anchorOffsetX="0" anchorOffsetY="0"/>
+			<e:Label text="累计30天签到达到指定天数，即可获得相应奖励" y="57" anchorOffsetX="0" width="561.34" size="23" textAlign="center" verticalAlign="middle" fontFamily="Microsoft YaHei" textColor="0xfcf9f9" horizontalCenter="0"/>
+			<e:ProgressBar id="activity_sign_progress" width="550" height="40" y="143.03" anchorOffsetX="0" anchorOffsetY="0" enabled="true" horizontalCenter="-11" scaleX="1" value="0">
+				<e:Skin>
+					<e:Image scale9Grid="1,1,4,4" width="100%" height="100%" verticalCenter="0" source="PreLoadingBarBg_png"/>
+					<e:Image id="thumb" top="12" height="11" width="91%" source="PreLoadingBar_png" horizontalCenter="0"/>
+				</e:Skin>
+			</e:ProgressBar>
+			<e:Label id="activity_days_1" text="3天" x="116.99" y="93.69" size="20" textColor="0x7e89ee" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_days_2" text="6天" x="252" y="93.69" size="20" textColor="0x7E89EE" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_days_3" text="10天" x="378.32" y="93.69" size="20" textColor="0x7E89EE" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_days_4" text="15天" x="493.66" y="93.69" size="20" textColor="0x7E89EE" fontFamily="Microsoft YaHei"/>
+			<e:Image width="42" height="42" x="110.99" y="140.69" source="sign_activity_1_png"/>
+			<e:Image width="75" height="50" x="234.39" y="133.69" source="sign_activity_2_png"/>
+			<e:Image width="85" height="64" x="483.46" y="125.29" source="sign_activity_3_png"/>
+			<e:Image width="125" height="125" x="334.66" y="96.09" source="icon_safe_box_take_png"/>
+			<e:Label id="activity_reward_1" text="金币5000" x="91.59" y="203.69" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_reward_2" text="金币10000" x="231.83" y="203.69" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_reward_3" text="金币20000" x="354.98" y="203.69" size="20" fontFamily="Microsoft YaHei"/>
+			<e:Label id="activity_reward_4" text="钻石10" x="488.85" y="203.69" size="20" fontFamily="Microsoft YaHei"/>
+		</e:Group>
+
+		<e:Image id="sign_1" width="144" height="229" x="60.56" y="472" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_1_normal_png"/>
+		<e:Image id="sign_2" width="144" height="229" x="209.16" y="472" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_2_normal_png"/>
+		<e:Image id="sign_3" width="144" height="229" x="360.12" y="472" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_3_normal_png"/>
+		<e:Image id="sign_4" width="144" height="229" x="510" y="472" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_4_normal_png"/>
+		<e:Image id="sign_5" width="144" height="229" x="135.16" y="707" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_5_normal_png"/>
+		<e:Image id="sign_6" width="144" height="229" x="285.04" y="707" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_6_normal_png"/>
+		<e:Image id="sign_7" width="144" height="229" x="436.48" y="707" anchorOffsetX="0" anchorOffsetY="0" source="bg_sign_7_normal_png"/>
+
+
+		<e:Image id="sign_gold_1" width="87" height="56" x="86.48" y="566.44" source="sign_gold_1_png"/>
+		<e:Image id="sign_gold_2" width="90" height="71" x="239.77" y="560" source="sign_gold_2_png"/>
+		<e:Image id="sign_gold_3" width="89" height="71" x="391.76" y="560" source="sign_gold_3_png"/>
+		<e:Image id="sign_gold_4" width="90" height="71" x="540.7" y="560" source="sign_gold_4_png"/>
+		<e:Image id="sign_gold_5" width="110" height="79" x="153.36" y="787.52" source="sign_gold_5_png" rotation="359.83"/>
+		<e:Image id="sign_gold_6" width="115" height="94" x="301.08" y="779.92" source="sign_gold_6_png"/>
+		<e:Image id="sign_gold_7" width="118" height="97" x="450.8" y="779.92" source="sign_gold_7_png"/>
+		<e:Image width="21" height="21" x="79" y="665.02" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="378.49" y="665.17" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="528.49" y="665.17" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="455.15" y="900.83" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="303.83" y="899.84" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="153.8" y="899.84" source="small_gold_png"/>
+		<e:Image width="21" height="21" x="227.5" y="664.83" source="small_gold_png"/>
+		<e:Label id="normal_reward_1" text="2000" x="101.5" y="666.5" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xffb502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_4" text="2000" x="551.67" y="666.33" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_2" text="2000" x="254.5" y="666" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_3" text="2000" x="404" y="666.33" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_5" text="2000" x="178" y="901.33" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_6" text="2000" x="328.67" y="901.67" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		<e:Label id="normal_reward_7" text="2000" x="480.32" y="901.67" anchorOffsetX="0" width="78" anchorOffsetY="0" height="18" size="20" textColor="0xFFB502" verticalAlign="middle" textAlign="center" fontFamily="Microsoft YaHei"/>
+		
+		
+		<e:Image id="sign_mark_1" width="63" height="63" x="100.96" y="558" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_2" width="63" height="63" x="251.58" y="558" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_3" width="63" height="63" x="402.13" y="558" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_4" width="63" height="63" x="554.33" y="558" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_6" width="63" height="63" x="325.36" y="793.08" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_7" width="63" height="63" x="478.8" y="791.03" source="checkmark_png" visible="false"/>
+		<e:Image id="sign_mark_5" width="63" height="63" x="175.48" y="792.48" source="checkmark_png" visible="false"/>>"/>
+	</e:Group>
+	
+	<e:Button id="btn_sign" label="" y="1055.93" width="224" height="76" horizontalCenter="11.5">
+		<e:skinName>
+			<e:Skin states="up,down,disabled">
+			<e:Image width="90%" height="90%" width.down="100%" height.down="100%" source="sign_btn_png" source.down="sign_btn_png"/>
+			<e:Label id="labelDisplay" horizontalCenter="0" verticalCenter="0"/>
+			</e:Skin>
+		</e:skinName>
+	</e:Button>
+</e:Skin>
