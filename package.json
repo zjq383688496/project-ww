@@ -1,0 +1,25 @@
+{
+  "name": "project-ww",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zjq383688496/project-ww.git"
+  },
+  "author": "jimmy.zhuang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zjq383688496/project-ww/issues"
+  },
+  "homepage": "https://github.com/zjq383688496/project-ww#readme",
+  "dependencies": {
+    "browser-sync": "^2.18.13",
+    "express": "^4.15.4",
+    "gulp": "^3.9.1",
+    "gulp-nodemon": "^2.2.1"
+  }
+}
