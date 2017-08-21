@@ -61,10 +61,9 @@ function format(query) {
 // 所有GET请求处理
 router.get('*', function(req, res, next) {
 	var query = req.query
-	// http.headers = req.headers
 	var url = req.originalUrl.split('?')[0] + '?' + format(query)
 
-	http.get(url, function(data, rs) {
+	http.get(url.replace('/api', ''), function(data, rs) {
 		res.status(rs.statusCode).send(data)
 	}, function(err, rs) {
 		if (rs) {
@@ -81,10 +80,7 @@ router.post('*', function(req, res, next) {
 	var body = req.body,
 		url = req.originalUrl
 	// http.headers = req.headers
-	http.post(url, body, function(data, rs) {
-		// if (/getUserInfo/.test(url)) {
-		// 	res.cookie('u', JSON.stringify(data.data), { maxAge: 86400000 * 7 })
-		// }
+	http.post(url.replace('/api', ''), body, function(data, rs) {
 		res.status(rs.statusCode).send(data)
 	}, function(err, rs) {
 		if (rs) {
