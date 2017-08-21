@@ -17,9 +17,11 @@
   },
   "homepage": "https://github.com/zjq383688496/project-ww#readme",
   "dependencies": {
+    "body-parser": "^1.17.2",
     "browser-sync": "^2.18.13",
     "express": "^4.15.4",
     "gulp": "^3.9.1",
-    "gulp-nodemon": "^2.2.1"
+    "gulp-nodemon": "^2.2.1",
+    "request": "^2.81.0"
   }
 }

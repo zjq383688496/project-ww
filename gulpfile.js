@@ -1,5 +1,4 @@
 const gulp        = require('gulp')
-const connect     = require('gulp-connect')
 const nodemon     = require('gulp-nodemon')
 const browserSync = require('browser-sync').create()
 

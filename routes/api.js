@@ -1,6 +1,7 @@
-const express = require('express')
 const router  = require('express').Router()
 const request = require('request')
+
+const API = 'http://wrc.szhskk.com/index'
 
 const http = {
 	result: function(err, res, data, success, error) {
@@ -20,7 +21,7 @@ const http = {
 	},
 	get: function(url, success, error) {
 		var me = this
-		var uri = config.api + url
+		var uri = API + url
 		var opts = {
 			url: uri,
 			json: true
@@ -33,7 +34,7 @@ const http = {
 	},
 	post: function(url, reqData, success, error) {
 		var me = this
-		var uri = config.api + url
+		var uri = API + url
 		var opts = {
 			url: uri,
 			json: true,
@@ -81,9 +82,9 @@ router.post('*', function(req, res, next) {
 		url = req.originalUrl
 	// http.headers = req.headers
 	http.post(url, body, function(data, rs) {
-		if (/getUserInfo/.test(url)) {
-			res.cookie('u', JSON.stringify(data.data), { maxAge: 86400000 * 7 })
-		}
+		// if (/getUserInfo/.test(url)) {
+		// 	res.cookie('u', JSON.stringify(data.data), { maxAge: 86400000 * 7 })
+		// }
 		res.status(rs.statusCode).send(data)
 	}, function(err, rs) {
 		if (rs) {
