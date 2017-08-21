@@ -1,1 +1,21 @@
 13723  登陆接口
+
+13185251037  密码 1234567
+
+1、登陆
+http://wrc.szhskk.com/index/login/login.html
+POST
+username:13800000000
+upwd:111111
+返回：{"data":"登录成功!","type":1}   // type=1 的时候  都是请求 成功的
+
+
+2、http://wrc.szhskk.com/index/login/register.html
+POST
+username:13800000001
+phonecode:111111
+upwd:111111
+upwd2:111111
+oid:1031 //推荐码
+返回：{"data":"注册成功，已自动登录!","type":1}
+
