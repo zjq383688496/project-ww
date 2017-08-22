@@ -19,13 +19,13 @@ http://eg.qqqdui.com/index.html
 
 
 1 登录
-+ http://wrc.szhskk.com/index/login/login.html
++ http://wrc.szhskk.com/index/open/login.html
 + POST
 + DATA:  { username: 13800000000, upwd: 111111 }
 + RESPONSE：{ "data":"登录成功!", "type":1 }
 
 2 注册
-+ http://wrc.szhskk.com/index/login/register.html
++ http://wrc.szhskk.com/index/open/register.html
 + POST
 + DATA:  { 
 	username:13800000001,
@@ -35,5 +35,10 @@ http://eg.qqqdui.com/index.html
 	oid:1031 //推荐码
  }
 + RESPONSE：{"data":"注册成功，已自动登录!","type":1}
+
+
+3 找回
++ http://wrc.szhskk.com/index/open/register.html
++ POST
 
 
