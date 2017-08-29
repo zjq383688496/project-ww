@@ -1,10 +1,20 @@
 'use strict'
 
-const express    = require('express')
-const app        = express()
-const bodyParser = require('body-parser')
+const express      = require('express')
+const bodyParser   = require('body-parser')
+const cookieParser = require('cookie-parser')
+const session      = require('express-session')
+
+const app          = express()
 
 app.disable('x-powered-by')
+
+app.use(session({
+	secret: 'ww.secret',
+	resave: true,
+	name: 'ww.session',
+	saveUninitialized: true
+}))
 
 app.use(bodyParser.urlencoded({ limit: '5mb', extended: true }))
 
