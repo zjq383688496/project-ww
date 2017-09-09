@@ -6,8 +6,9 @@ window.API = {
 	login:   'open/login.html',		// 登录
 	reg:     'open/register.html', 	// 注册
 	balance: 'open/balance.html',	// 余额
-	room:    'open/getRooms.html',	// 房间
+	// room:    'open/getRooms.html',	// 房间
 	prorate: 'open/prorate.html',	// 资产赔率
+	room:    'open/get.html',
 }
 
 window.CONFIG = {

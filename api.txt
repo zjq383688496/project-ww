@@ -1,0 +1,33 @@
+﻿4、房间、钱包、
+/index/open/get.html
+POST
+参数：
+{
+  "game_model_type":"1",
+  "capital_key":"btc"//不传  查所有的
+  "is_sim":"Y/N"  //capital_key有值此参数才有效 , 不传  默认查is_sim=N
+}
+返回： 有此capital_key 条件 返回的数组就一个元素
+{"results":[{"id":19,"capital_name":"比特币","isopen":1,"is_sim":"Y","capital_key":"btc","Price":"29688.62","UpdateTime":"1504174382","Low":"29621.0","High":"29721.97"},{"id":16,"capital_name":"欧元英镑","isopen":1,"is_sim":"Y","capital_key":"fx_seurgbp","Price":"0.92059","UpdateTime":"1504174382","Low":"0.91841","High":"0.92371"},{"id":14,"capital_name":"英镑美元","isopen":1,"is_sim":"Y","capital_key":"fx_sgbpusd","Price":"1.28754","UpdateTime":"1504174399","Low":"1.287","High":"1.29304"},{"id":13,"capital_name":"欧元美元","isopen":1,"is_sim":"Y","capital_key":"fx_seurusd","Price":"1.18522","UpdateTime":"1504174382","Low":"1.1845","High":"1.19058"},{"id":12,"capital_name":"比特币","isopen":1,"is_sim":"N","capital_key":"btc","Price":"29688.62","UpdateTime":"1504174382","Low":"29621.0","High":"29721.97"},{"id":9,"capital_name":"欧元英镑","isopen":1,"is_sim":"N","capital_key":"fx_seurgbp","Price":"0.92059","UpdateTime":"1504174382","Low":"0.91841","High":"0.92371"},{"id":7,"capital_name":"英镑美元","isopen":1,"is_sim":"N","capital_key":"fx_sgbpusd","Price":"1.28754","UpdateTime":"1504174399","Low":"1.287","High":"1.29304"},{"id":6,"capital_name":"欧元美元","isopen":1,"is_sim":"N","capital_key":"fx_seurusd","Price":"1.18524","UpdateTime":"1504174399","Low":"1.1845","High":"1.19058"}],"type":1}
+
+参数：
+{
+  "ewallet_type":"G"
+}
+返回：电子钱包
+{"results":{"user_id":1078,"balance":"10233.00","trade_amount":400},"type":1}
+
+
+5、资产赔率
+http://wrc.szhskk.com/index/open/prorate.html
+POST
+pid:12
+返回：
+{"results":[{"display":"涨","type":"10","odds":"1.85","pid":"12"},{"display":"平","type":"11","odds":"30.00","pid":"12"},{"display":"跌","type":"12","odds":"1.85","pid":"12"},{"display":"涨单","type":"13","odds":"3.85","pid":"12"},{"display":"涨双","type":"14","odds":"3.85","pid":"12"},{"display":"跌单","type":"15","odds":"3.85","pid":"12"},{"display":"跌双","type":"16","odds":"3.85","pid":"12"}],"type":1}
+5、资产赔率
+http://wrc.szhskk.com/index/open/prorate.html
+POST
+pid:12
+返回：{"results":[{"id":"60","capital_key":"btc","interval_start":"1","interval_end":null,"display":"\u6da8","odds":"1.85","order":"0"},{"id":"61","capital_key":"btc","interval_start":"0","interval_end":null,"display":"\u5e73","odds":"30.00","order":"1"},{"id":"62","capital_key":"btc","interval_start":"-1","interval_end":null,"display":"\u8dcc","odds":"1.85","order":"2"},{"id":"63","capital_key":"btc","interval_start":"1","interval_end":"1","display":"\u6da8\u5355","odds":"3.85","order":"3"},{"id":"64","capital_key":"btc","interval_start":"1","interval_end":"2","display":"\u6da8\u53cc","odds":"3.85","order":"4"},{"id":"65","capital_key":"btc","interval_start":"-1","interval_end":"1","display":"\u8dcc\u5355","odds":"3.85","order":"5"},{"id":"66","capital_key":"btc","interval_start":"-1","interval_end":"2","display":"\u8dcc\u53cc","odds":"3.85","order":"6"}],"type":1}
+
+
