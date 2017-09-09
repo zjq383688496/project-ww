@@ -8,6 +8,7 @@ window.API = {
 	balance: 'open/balance.html',	// 余额
 	room:    'open/getRooms.html',	// 房间
 	prorate: 'open/prorate.html',	// 资产赔率
+	// room:    'open/get.html'
 }
 
 window.CONFIG = {
