@@ -64,7 +64,7 @@ var Channel = function() {
 				if (!window.JSON || !window.JSON.stringify || !window.JSON.parse) throw "jschannel cannot run this browser, no JSON parsing/serialization";
 				if ("object" != typeof o) throw "Channel build invoked without a proper object argument";
 				if (!o.window || !o.window.postMessage) throw "Channel.build() called without a valid window argument";
-				if (window === o.window) throw "target window is same as present window -- not allowed";
+				// if (window === o.window) throw "target window is same as present window -- not allowed";
 				var a = !1;
 				if ("string" == typeof o.origin) {
 					var c;
